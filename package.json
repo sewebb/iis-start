@@ -5,7 +5,7 @@
         "start": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "sassdoc": "sassdoc resources/scss --dest resources/sassdoc",
-        "elint": "eslint resources/**/*.js",
+        "eslint": "eslint resources/**/*.js",
         "sasslint": "node ./node_modules/.bin/sass-lint -v -q",
         "phplint": "phcs -p --standard=wordpress-rules.xml **/*.php"
     },
