@@ -7,7 +7,8 @@
         "sassdoc": "sassdoc resources/scss --dest resources/sassdoc",
         "eslint": "eslint resources/**/*.js",
         "sasslint": "node ./node_modules/.bin/sass-lint -v -q",
-        "phplint": "phcs -p --standard=wordpress-rules.xml **/*.php"
+        "phplint": "phpcs -p --standard=wordpress-rules.xml **/*.php",
+        "lint": "yarn run eslint && yarn run sasslint && yarn run phplint"
     },
     "devDependencies": {
         "babel-eslint": "^9.0.0",
