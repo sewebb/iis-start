@@ -1,0 +1,50 @@
+/// Breakpoints
+///
+/// @group General
+/// @example
+///     @include breakpoint(sm) {
+///         display: none;
+///     }
+@mixin breakpoint($breakpoint) {
+	@if $breakpoint == 'sm' {
+		@media screen and (max-width: rem(map-get($breakpoints, md) - 1px)) {
+			@content;
+		}
+	} @else if $breakpoint == 'not-lg' {
+		@media screen and (max-width: rem(map-get($breakpoints, lg) - 1px)) {
+			@content;
+		}
+	} @else if $breakpoint == 'md-only' {
+		@media screen and (min-width: rem(map-get($breakpoints, md))) and (max-width: rem(map-get($breakpoints, lg) - 1px)) {
+			@content;
+		}
+	} @else {
+		@media screen and (min-width: rem(map-get($breakpoints, $breakpoint))) {
+			@content;
+		}
+	}
+}
+
+/// Create an atom with the given name. Alias for the block mixin that autoprefixes the class with a-.
+/// @group General
+@mixin atom($name) {
+	@include b(a-#{$name}) {
+		@content;
+	}
+}
+
+/// Create a molecule with the given name. Alias for the block mixin that autoprefixes the class with m-.
+/// @group General
+@mixin molecule($name) {
+	@include b(m-#{$name}) {
+		@content;
+	}
+}
+
+/// Create an organism with the given name. Alias for the block mixin that autoprefixes the class with o-.
+/// @group General
+@mixin organism($name) {
+	@include b(o-#{$name}) {
+		@content;
+	}
+}

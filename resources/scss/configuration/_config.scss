@@ -1,0 +1,37 @@
+/// Namespace
+/// Prepended to all outputted classes
+///
+/// @group Config
+$namespace: 'iis-start-';
+
+/// Theme path
+/// For images and other media
+///
+/// @group Config
+$theme-path: '/wp-content/themes/iis-start';
+
+/// Responsive breakpoints
+/// @group Config
+$breakpoints: (
+	'sm': 0,
+	'md': 640px,
+	'lg': 1100px
+);
+
+/// Z-index layers
+/// @group Config
+$z-index: (
+	'foreground': 1000,
+	'middleground': 500,
+	'middlegroundImportant': 750,
+	'background': 1
+);
+
+/// The z-index value from a given layer
+///
+/// @group Config
+/// @example
+///     z-index: zIndex(foreground);
+@function z_index($layer) {
+	@return map_get($z-index, $layer);
+}

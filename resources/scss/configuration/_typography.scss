@@ -1,0 +1,54 @@
+/// Body font size
+/// @group Typography
+$body-font-size: 20px;
+
+/// Headline sizes
+/// @group Typography
+$headline-font-size: (
+	h1: 42px,
+	h2: 28px
+);
+
+/// Include body font-family with given font-weight
+///
+/// @group Typography
+/// @output `font-family: sans-serif; font-weight: 400`
+/// @example
+///     body {
+///         @include bodyFont(400);
+///     }
+@mixin body-font($weight: 400) {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: $weight;
+}
+
+//// Include headline font-family with given font-weight
+///
+/// @group Typography
+/// @output `font-family: sans-serif; font-weight: 800`
+/// @example
+///     h1 {
+///         @include headlineFont(800);
+///     }
+@mixin headline-font($weight: 800) {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: $weight;
+}
+
+/// Get rem value from given pixels and context size
+///
+/// @group Typography
+/// @example
+///     font-size: rem(16px);
+@function rem($pixels, $context: $body-font-size) {
+	@return #{$pixels / $context}rem;
+}
+
+/// Get headline font size from the $headline-font-size map
+///
+/// @group Typography
+/// @example
+///     font-size: fontSize(h1);
+@function font_size($heading) {
+	@return rem(map_get($headline-font-size, $heading));
+}
