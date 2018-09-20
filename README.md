@@ -36,7 +36,7 @@ It's recommended to configure `.browserslist` and when necessary install babel p
 
 ## Code quality
 
-Before pushing any code make sure that the code follows the guidelines.
+Before pushing any code make sure that the code follows [the IIS Coding Conventions](https://github.com/sewebb/iis-start/wiki/IIS-Coding-Conventions).
 
 * `yarn run eslint`
 * `yarn run sasslint`
