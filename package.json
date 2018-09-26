@@ -5,11 +5,11 @@
         "start": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "sassdoc": "sassdoc resources/scss --dest resources/sassdoc",
-        "eslint": "eslint resources/**/*.js",
+        "eslint": "eslint assets/**/*.js",
         "sasslint": "node ./node_modules/.bin/sass-lint -v -q",
-        "phplint": "phpcs -p --standard=wordpress-rules.xml **/*.php",
-        "lint": "yarn run eslint && yarn run sasslint && yarn run phplint",
-        "htmllint": "htmlhint --config .htmlhintrc --ignore node_modules --format compact ./**/*.php *.php"
+        "phplint": "./vendor/bin/phpcs -p --standard=wordpress-rules.xml /www/app/themes/**/*.php",
+        "htmllint": "htmlhint --config .htmlhintrc --ignore node_modules --format compact ./www/app/themes/**/*.php *.php",
+        "lint": "yarn run eslint && yarn run sasslint && yarn run phplint && yarn run htmllint"
     },
     "devDependencies": {
         "babel-eslint": "^9.0.0",

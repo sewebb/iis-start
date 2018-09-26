@@ -28,8 +28,8 @@ mix.webpackConfig({
 });
 
 mix
-	.js('./resources/js/site.js', './assets/js/site.js')
-	.sass('./resources/scss/site.scss', './assets/css')
+	.js('./assets/js/site.js', './www/app/themes/iis-start/assets/js/site.js')
+	.sass('./assets/scss/site.scss', './www/app/themes/iis-start/assets/css')
 	//.browserSync('iis-start.test')
 	.version()
-	.setPublicPath('./');
+	.setPublicPath('./www/app/themes/iis-start/');

@@ -1,2 +1,18 @@
+# This project
+www/app/uploads
+www/app/mu-plugins
+www/app/languages
+www/app/themes/bredbandskollen/js/app.min.js
+www/app/themes/bredbandskollen/css/app.css
+www/wp/
+www/app/db.php
+
+# Common
+*.log
+.env
+
+# Composer
+vendor
+
+# Node
 node_modules
-mix-manifest.json

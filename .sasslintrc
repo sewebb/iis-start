@@ -1,6 +1,6 @@
 {
     "files": {
-        "include": "resources/scss/**/*.scss"
+        "include": "assets/scss/**/*.scss"
     },
     "rules": {
         "extends-before-mixins": 2,

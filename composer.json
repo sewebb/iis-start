@@ -1,0 +1,79 @@
+{
+    "name": "iis/iis-start",
+    "type": "wordpress-core",
+    "version": "0.1",
+    "description": "IIS Start",
+    "authors": [
+        {
+            "name": "Jonas Nordström",
+            "email": "jonas.nordstrom@gmail.com"
+        },
+        {
+            "name": "Richard Brattlund",
+            "email": "richard.brattlund@iis.se"
+        },
+        {
+            "name": "Thomas Mårtensson",
+            "email": "thomas@mamilldo.se"
+        },
+        {
+            "name": "Tobias Bleckert",
+            "email": "tobias.bleckert@iis.se"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:sewebb/iis-pack.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "composer/installers": "~1.0",
+        "vlucas/phpdotenv": "^2.2",
+        "johnpbloch/wordpress": "^4.9",
+        "oscarotero/env":"^1.0",
+        "larapack/dd": "1.*",
+        "laravel/envoy": "^1.0",
+        "wpackagist-plugin/nginx-helper": "*",
+        "zurb/foundation": "^6.3",
+        "iis/iis-pack": "dev-master",
+        "koodimonni-language/core-sv_SE": "*",
+        "wpackagist-plugin/wp-retina-2x": "*",
+        "wpackagist-plugin/polylang": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "www/app/themes/iis-start/inc/"
+        ]
+    },
+    "extra": {
+        "wordpress-install-dir": "www/wp",
+        "installer-paths": {
+            "www/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "www/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "www/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "dropin-paths": {
+            "www/app/languages/": ["vendor:koodimonni-language"],
+            "www/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+            "www/app/languages/themes/": ["vendor:koodimonni-theme-language"]
+        }
+    },
+    "require-dev": {
+        "wpackagist-plugin/query-monitor": "dev-trunk",
+        "wpackagist-plugin/debug-bar-console": "dev-trunk",
+        "wpackagist-plugin/rewrite-rules-inspector": "dev-trunk",
+        "squizlabs/php_codesniffer": "3.*",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+        "wp-coding-standards/wpcs": "^1.1"
+    }
+}
