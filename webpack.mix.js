@@ -5,7 +5,7 @@ const WebpackShellPlugin = require('webpack-shell-plugin');
 mix.webpackConfig({
 	plugins: [
 		new WebpackShellPlugin({
-			onBuildEnd: ['yarn run eslint', 'yarn run sasslint', 'yarn run phplint'],
+			onBuildEnd: ['yarn run eslint', 'yarn run sasslint'],
 			dev: false,
 		}),
 	],
