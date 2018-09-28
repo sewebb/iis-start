@@ -5,6 +5,14 @@ new themes and to keep the themes consistent in terms of code style, build/bundl
 
 Start by reading this README that contains sections on how to get started, development workflow and coding conventions.
 
+## Dependencies
+
+- Docker or Vagrant
+- Git
+- Composer
+- Yarn
+- PHPCS & WordPress Coding Standards
+
 ## How to use
 
 1. Clone the theme
