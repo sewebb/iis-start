@@ -6,6 +6,7 @@ www/app/themes/bredbandskollen/js/app.min.js
 www/app/themes/bredbandskollen/css/app.css
 www/wp/
 www/app/db.php
+mix-manifest.json
 
 # Common
 *.log

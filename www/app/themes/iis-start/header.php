@@ -8,4 +8,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div class="site">
+		<div class="iis-start-site">
+			<header class="iis-start-o-header">
+				Header
+			</header>

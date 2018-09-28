@@ -1,0 +1,8 @@
+@include organism(header) {
+	background: theme_color(light-accent);
+	height: rem(200px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: theme_color('white');
+}

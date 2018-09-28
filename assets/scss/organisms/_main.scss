@@ -1,0 +1,8 @@
+@include organism(main) {
+	background: theme_color('white');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: rem($default-margin);
+	text-align: center;
+}

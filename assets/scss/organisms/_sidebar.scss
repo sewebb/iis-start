@@ -1,0 +1,7 @@
+@include organism(sidebar) {
+	background: theme_color(dark-accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: rem($default-margin);
+}
