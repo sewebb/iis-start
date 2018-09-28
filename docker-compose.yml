@@ -7,9 +7,10 @@ services:
             - "./:/var/www/html"
             - "./docker/nginx/default.template.conf:/etc/nginx/conf.d/default.template"
         ports:
-            - "8000:80"
+            - "${DOCKER_PORT}:80"
         environment:
             - NGINX_HOST=${NGINX_HOST}
+            - VIRTUAL_HOST=${NGINX_HOST}
         command: /bin/sh -c "envsubst '$$NGINX_HOST' < /etc/nginx/conf.d/default.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
         restart: always
         depends_on:
@@ -28,15 +29,15 @@ services:
         command: install
     mysqldb:
         image: mysql:${MYSQL_VERSION}
-        container_name: ${MYSQL_HOST}
+        container_name: ${DB_HOST}
         restart: always
         env_file:
             - ".env"
         environment:
-            - MYSQL_DATABASE=${MYSQL_DATABASE}
-            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-            - MYSQL_USER=${MYSQL_USER}
-            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_DATABASE=${DB_NAME}
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=${DB_USER}
+            - MYSQL_PASSWORD=${DB_PASSWORD}
         ports:
             - "8989:3306"
         volumes:

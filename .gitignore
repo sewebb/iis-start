@@ -18,5 +18,4 @@ vendor
 node_modules
 
 # Docker
-docker/nginx/default.conf
 .data
