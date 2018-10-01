@@ -14,10 +14,10 @@ Start by reading this README that contains sections on how to get started, devel
 
 ## How to use
 
-1. Clone the theme
+1. Clone the repo
 2. Replace all instances of "IIS Start", see replacements below
 3. Update style.css
-4. Copy `.env-sample to .env` and make necessary changes.
+4. Copy `.env-sample` to `.env` and make necessary changes.
 4. Run `composer install` to setup WordPress.
 5. Install client dependencies `yarn install`
 6. Run `yarn run production` to build css and javascript files
