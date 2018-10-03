@@ -12,6 +12,9 @@ mix-manifest.json
 *.log
 .env
 
+# IDE
+.idea
+
 # Composer
 vendor
 
