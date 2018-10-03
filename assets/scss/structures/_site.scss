@@ -15,8 +15,8 @@
 		grid-area: footer;
 	}
 
-	min-height: 100vh;
 	display: grid;
+	min-height: 100vh;
 
 	@include breakpoint(sm) {
 		grid-template-areas:
@@ -29,7 +29,6 @@
 	}
 
 	@include breakpoint(md) {
-		grid-template-rows: auto;
 		grid-template-columns: 1fr 33.333%;
 		grid-template-rows: auto 1fr auto;
 		grid-template-areas:

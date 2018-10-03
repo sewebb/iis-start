@@ -1,8 +1,6 @@
 @include organism(footer) {
-	background: theme_color(dark-shade);
+	@extend %center-content;
+	@extend %background--dark-shade;
+	@extend %color--white;
 	height: rem(200px);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: theme_color('white');
 }

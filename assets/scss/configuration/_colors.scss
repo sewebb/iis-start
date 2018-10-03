@@ -52,11 +52,11 @@ $theme-palette: (
 );
 
 @each $name, $hex in $theme-palette {
-	@include b(color--#{$name}) {
+	%color--#{$name} {
 		color: $hex;
 	}
 
-	@include b(background--#{$name}) {
+	%background--#{$name} {
 		background-color: $hex;
 	}
 }
