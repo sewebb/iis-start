@@ -1,0 +1,7 @@
+@include atom(card) {
+	@extend %background--dark-accent;
+	border-radius: $default-border-radius;
+	padding: rem($gutter);
+	text-align: center;
+	font-size: rem($small-font-size);
+}
