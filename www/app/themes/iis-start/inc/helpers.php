@@ -31,3 +31,22 @@ function iis_start_config( $keys ) {
 function iis_start_img( $img ) {
 	echo esc_url( get_stylesheet_directory_uri() . '/assets/img/' . $img );
 }
+
+/**
+ * Cache return value of callback if not already cached and return the contents
+ *
+ * @param string   $cache_key  The name of the cached content
+ * @param int      $cache_time How long the content should be cached
+ * @param callable $callback   The callback that returns the content that should be cached
+ * @return mixed|null
+ */
+function iis_start_remember( $cache_key, $cache_time, $callback ) {
+	$content = ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ) ? false : get_transient( $cache_key );
+
+	if ( ! $content ) {
+		$content = $callback();
+		set_transient( $cache_key, $content, $cache_time );
+	}
+
+	return $content;
+}
