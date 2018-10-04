@@ -3,13 +3,12 @@
 /**
  * IIS Start config helper
  *
- * @param  str $keys the key to get the value for. Use dot notation for going deeper.
+ * @param  string $keys the key to get the value for. Use dot notation for going deeper.
  * @return mixed     The value (if found) for the given key.
  */
 function iis_start_config( $keys ) {
-	$iis_start_config = include 'config.php';
-	$keys             = explode( '.', $keys );
-	$value            = $iis_start_config;
+	$keys  = explode( '.', $keys );
+	$value = include get_template_directory() . '/config.php';
 
 	foreach ( $keys as $key ) {
 		if ( isset( $value[ $key ] ) ) {
@@ -26,7 +25,7 @@ function iis_start_config( $keys ) {
 /**
  * IIS Start img helper
  *
- * @param  str $img image path and filename
+ * @param  string $img image path and filename
  * @return void Nothing to return, echoes the full URL to the given image
  */
 function iis_start_img( $img ) {
