@@ -5,7 +5,7 @@
 
 	<p>There's also a structure called grid that you can use with our without gutters. Configure the gutter width in the layout configuration</p>
 
-	<div class="grid grid-cols-6 grid-gap-1">
+	<div class="iis-start-grid iis-start-grid-cols-6 iis-start-grid-gap">
 		<div class="iis-start-a-card">Col 1</div>
 		<div class="iis-start-a-card">Col 2</div>
 		<div class="iis-start-a-card">Col 3</div>
