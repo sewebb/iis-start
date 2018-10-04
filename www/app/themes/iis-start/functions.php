@@ -65,14 +65,14 @@ function iis_start_assets() {
 add_action( 'wp_enqueue_scripts', 'iis_start_assets' );
 
 /**
- * For security reasons, remove the wordpress generator meta tag
+ * For security reasons, remove the WordPress generator meta tag
  */
- function remove_generator_filter() {
-	 return '';
- }
+function remove_generator_filter() {
+	return '';
+}
 
- $types = array('html', 'xhtml', 'atom', 'rss2', 'comment', 'export');
+$types = [ 'html', 'xhtml', 'atom', 'rss2', 'comment', 'export' ];
 
- foreach ($types as $type) {
-	 add_filter( 'get_the_generator_' . $type, 'remove_generator_filter' );
- }
+foreach ( $types as $generator_type ) {
+	add_filter( 'get_the_generator_' . $generator_type, 'remove_generator_filter' );
+}
