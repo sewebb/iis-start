@@ -7,7 +7,7 @@
         "sassdoc": "sassdoc resources/scss --dest resources/sassdoc",
         "eslint": "eslint assets/**/*.js",
         "sasslint": "node ./node_modules/.bin/sass-lint -v -q",
-        "phplint": "./vendor/bin/phpcs -p --standard=wordpress-rules.xml /www/app/themes/**/*.php",
+        "phplint": "./vendor/bin/phpcs -p --standard=wordpress-rules.xml --extensions=php ./www/app/themes/iis-start",
         "htmllint": "htmlhint --config .htmlhintrc --ignore node_modules --format compact ./www/app/themes/**/*.php *.php",
         "lint": "yarn run eslint && yarn run sasslint && yarn run phplint && yarn run htmllint"
     },
