@@ -10,6 +10,14 @@ $modifier-separator: '--';
 /// @group BEM
 $state-prefix: 'is';
 
+/// Converts selector to string
+/// @group BEM
+@function selector_to_string($selector) {
+	$selector: inspect($selector); //cast to string
+	$selector: str-slice($selector, 2, -2); //remove brackets
+	@return $selector;
+}
+
 /// Checks if a inside a BEM modifier
 /// @group BEM
 @function contains_modifier($selector) {
@@ -21,18 +29,10 @@ $state-prefix: 'is';
 	}
 }
 
-/// Converts selector to string
-/// @group BEM
-@function selector_to_string($selector) {
-	$selector: inspect($selector); //cast to string
-	$selector: str-slice($selector, 2, -2); //remove brackets
-	@return $selector;
-}
-
 /// Get BEM block
 /// @group BEM
 @function get_block($selector) {
-	$selector: contains_modifier($selector);
+	$selector: selector_to_string($selector);
 	$modifier-start: str-index($selector, $modifier-separator) - 1;
 	@return str-slice($selector, 0, $modifier-start);
 }
@@ -53,14 +53,14 @@ $state-prefix: 'is';
 		$block: get_block($selector);
 		@at-root {
 			#{$selector} {
-				#{$block+$element-separator+$element} {
+				#{$block + $element-separator + $element} {
 					@content;
 				}
 			}
 		}
 	} @else {
 		@at-root {
-			#{$selector+$element-separator+$element} {
+			#{$selector + $element-separator + $element} {
 				@content;
 			}
 		}
@@ -71,7 +71,7 @@ $state-prefix: 'is';
 /// @group BEM
 @mixin m($modifier) {
 	@at-root {
-		#{&}#{$modifier-separator+$modifier} {
+		#{&}#{$modifier-separator + $modifier} {
 			@content;
 		}
 	}

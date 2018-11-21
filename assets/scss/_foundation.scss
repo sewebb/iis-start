@@ -1,11 +1,12 @@
 html {
 	@include body-font;
+
+	box-sizing: border-box;
 	height: 100%;
 	background: theme_color('white');
 	color: theme_color(dark-shade);
 	font-size: $body-font-size;
 	line-height: 1.5;
-	box-sizing: border-box;
 }
 
 *,

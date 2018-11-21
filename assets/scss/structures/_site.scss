@@ -1,4 +1,7 @@
 @include b(site) {
+	display: grid;
+	min-height: 100vh;
+
 	@include organism(header) {
 		grid-area: header;
 	}
@@ -15,25 +18,22 @@
 		grid-area: footer;
 	}
 
-	display: grid;
-	min-height: 100vh;
-
 	@include breakpoint(sm) {
 		grid-template-areas:
-		'header'
-		'main'
-		'sidebar'
-		'footer';
+			'header'
+			'main'
+			'sidebar'
+			'footer';
 		grid-template-columns: 100%;
 		grid-template-rows: auto 1fr auto auto;
 	}
 
 	@include breakpoint(md) {
+		grid-template-areas:
+			'header header'
+			'main sidebar'
+			'footer footer';
 		grid-template-columns: 1fr 33.333%;
 		grid-template-rows: auto 1fr auto;
-		grid-template-areas:
-		'header header'
-		'main sidebar'
-		'footer footer';
 	}
 }

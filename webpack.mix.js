@@ -1,35 +1,52 @@
 const mix = require('laravel-mix');
 const path = require('path');
-const WebpackShellPlugin = require('webpack-shell-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
+
+mix.options({
+	uglify: {
+		uglifyOptions: {
+			compress: {
+				drop_console: true,
+				dead_code: true,
+				pure_funcs: ['console.warn'],
+			},
+		},
+	},
+});
 
 mix.webpackConfig({
+	module: {
+		rules: [
+			{
+				enforce: 'pre',
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'eslint-loader',
+			},
+		],
+	},
 	plugins: [
-		new WebpackShellPlugin({
-			onBuildEnd: ['yarn run eslint', 'yarn run sasslint'],
-			dev: false,
+		new StyleLintPlugin({
+			files: 'assets/**/*.scss',
 		}),
+		new Dotenv(),
 	],
 	resolve: {
 		modules: [
 			path.resolve(__dirname, 'node_modules'),
 		],
+		alias: {
+			local: path.resolve(__dirname, 'assets/js'),
+		},
 	},
-	module: {
-		rules: [
-			{
-				test: /\.js?$/,
-				use: [{
-					loader: 'babel-loader',
-					options: mix.config.babel(),
-				}],
-			},
-		],
-	},
+	output: { chunkFilename: 'assets/js/chunks/[name].chunk.js?id=[chunkhash]', publicPath: '/app/themes/iis-start/' },
 });
 
 mix
 	.js('./assets/js/site.js', './www/app/themes/iis-start/assets/js/site.js')
 	.sass('./assets/scss/site.scss', './www/app/themes/iis-start/assets/css')
-	//.browserSync('iis-start.test')
+	// .browserSync('iis.test')
 	.version()
-	.setPublicPath('./www/app/themes/iis-start/');
+	.setPublicPath('./www/app/themes/iis-start/')
+	.sourceMaps(true, 'source-map');
