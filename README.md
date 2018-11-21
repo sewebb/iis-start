@@ -10,7 +10,7 @@ Start by reading this README that contains sections on how to get started, devel
 - Docker or Vagrant (optional)
 - Git
 - Composer
-- Yarn
+- Npm/Node
 
 ## How to use
 
@@ -19,8 +19,8 @@ Start by reading this README that contains sections on how to get started, devel
 3. Update style.css
 4. Copy `.env-sample` to `.env` and make necessary changes.
 4. Run `composer install` to setup WordPress.
-5. Install client dependencies `yarn install`
-6. Run `yarn run production` to build css and javascript files
+5. Install client dependencies `npm install`
+6. Run `npm run production` to build css and javascript files
 
 Do a "search & replace" (case sensitive) on the following:
 
@@ -43,9 +43,9 @@ Install [Docker](https://docs.docker.com/install/), copy `docker/nginx/default.t
 
 We use Webpack for bundling with Laravel Mix on top for an simpler API and less configuration.
 
-1. Start developing with `yarn start`.
+1. Start developing with `npm start`.
 
-`yarn start` watches scripts and styles, compiles/transpiles them with Babel (js) and SCSS+Autoprefixer (css).
+`npm start` watches scripts and styles, compiles/transpiles them with Babel (js) and SCSS+Autoprefixer (css).
 A mix-manifest.json is generated with the names to each bundle that the theme reads and includes on the page.
 
 ## Configuration
@@ -56,13 +56,13 @@ It's recommended to configure `.browserslist` and when necessary install babel p
 
 Before pushing any code make sure that the code follows [the IIS Coding Conventions](https://github.com/sewebb/iis-start/wiki/IIS-Coding-Conventions).
 
-* `yarn run eslint`
-* `yarn run sasslint`
-* `yarn run phplint`
-* `yarn run htmllint`
+* `npm run eslint`
+* `npm run sasslint`
+* `npm run phplint`
+* `npm run htmllint`
 
-Or all at once with `yarn run lint`.
+Or all at once with `npm run lint`.
 
 ## Production
 
-When deploying to production you should use `yarn run production` instead of `yarn start` to produce production-ready bundles.
+When deploying to production you should use `npm run production` instead of `npm start` to produce production-ready bundles.
