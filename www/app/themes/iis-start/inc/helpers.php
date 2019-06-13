@@ -124,3 +124,49 @@ function iis_start_active( $value, $compare_with = null, $attr = 'checked', $ech
 
 	echo esc_html( ( $active ) ? ' ' . $attr : '' );
 }
+
+/**
+ * Get the laravel mix manifest
+ *
+ * @return array|null
+ */
+function iis_start_mix_manifest() {
+	$mix_manifest_content = iis_start_remember(
+		'mix_manifest_transient',
+		1 * DAY_IN_SECONDS,
+		function () {
+			return file_get_contents( get_template_directory() . '/mix-manifest.json' );
+		}
+	);
+
+	try {
+		$mix_manifest = json_decode( $mix_manifest_content, true );
+	} catch ( Exception $e ) {
+		$mix_manifest = null;
+	}
+
+	return $mix_manifest;
+}
+
+/**
+ * Get the path to a versioned Mix file
+ *
+ * @param $path
+ * @param string $base
+ * @return string|null
+ */
+function iis_start_mix( $path, $base = '/assets/' ) {
+	$manifest = iis_start_mix_manifest();
+
+	if ( ! $manifest ) {
+		return null;
+	}
+
+	$path = $base . $path;
+
+	if ( ! isset( $manifest[$path] ) ) {
+		return null;
+	}
+
+	return $manifest[$path];
+}
