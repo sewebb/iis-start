@@ -46,6 +46,12 @@ define( 'NONCE_SALT', env( 'NONCE_SALT' ) );
 
 define( 'DISALLOW_FILE_MODS', true );
 
+/**
+ * Theme specifics
+ */
+define( 'MAILCHIMP_USERNAME', env( 'MAILCHIMP_USERNAME' ) );
+define( 'MAILCHIMP_API_KEY', env( 'MAILCHIMP_API_KEY' ) );
+
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', $webroot_dir . '/wp/' );
 }
