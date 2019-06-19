@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da4c45d550928f4ee6285b09553d6ea2",
+    "content-hash": "bf1a65cfe474ed9461a83a519444624e",
     "packages": [
         {
             "name": "composer/installers",
@@ -125,6 +125,61 @@
                 "zikula"
             ],
             "time": "2018-08-27T06:10:37+00:00"
+        },
+        {
+            "name": "iis/library",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sewebb/iis-library.git",
+                "reference": "331ff2b819fd8da256d290be75ce321974d63227"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/331ff2b819fd8da256d290be75ce321974d63227",
+                "reference": "331ff2b819fd8da256d290be75ce321974d63227",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.6",
+                "ext-json": "*",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "10up/wp_mock": "dev-master",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+                "phpunit/phpunit": "^8.1",
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "IIS\\Library\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Bleckert",
+                    "email": "tobias.bleckert@internetstiftelsen.se",
+                    "homepage": "https://internetstiftelsen.se"
+                }
+            ],
+            "description": "Useful helpers for WordPress themes",
+            "keywords": [
+                "helpers",
+                "library",
+                "theme",
+                "wordpress"
+            ],
+            "time": "2019-06-19T12:38:55+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -935,13 +990,14 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
+        "iis/library": 20,
         "wpackagist-plugin/query-monitor": 20,
         "wpackagist-plugin/debug-bar-console": 20,
         "wpackagist-plugin/rewrite-rules-inspector": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.0"
