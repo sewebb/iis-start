@@ -1,18 +1,4 @@
 {
     "parser": "babel-eslint",
-    "extends": "airbnb-base",
-    "env": {
-        "browser": true
-    },
-    "rules": {
-        "indent": ["error", "tab"],
-        "no-tabs": 0,
-        "import/no-unresolved": [2, {"ignore": ["local/"]}],
-        "no-param-reassign": [2, { "props": false }],
-        "no-underscore-dangle": ["error", { "allow": ["__", "_"] }],
-        "no-console": 0
-    },
-    "globals": {
-        "wp": true,
-    }
+    "extends": "@internetstiftelsen/eslint-config"
 }

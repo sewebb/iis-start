@@ -13,22 +13,21 @@
         "lint": "npm run eslint && npm run stylelint && npm run htmllint"
     },
     "devDependencies": {
-        "babel-eslint": "^9.0.0",
+        "@internetstiftelsen/eslint-config": "0.0.1",
+        "@internetstiftelsen/stylelint-config": "0.0.1",
+        "babel-eslint": "^10.0.3",
         "babel-plugin-syntax-dynamic-import": "^6.18.0",
         "babel-plugin-transform-class-properties": "^6.24.1",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-preset-env": "^1.7.0",
         "dotenv-webpack": "^1.5.7",
-        "eslint": "^5.9.0",
-        "eslint-config-airbnb-base": "^13.1.0",
-        "eslint-loader": "^2.1.1",
-        "eslint-plugin-import": "^2.14.0",
+        "eslint": "^6.5.1",
+        "eslint-loader": "^3.0.2",
+        "eslint-plugin-import": "^2.18.2",
         "htmlhint": "^0.10.1",
         "laravel-mix": "^2.1.14",
-        "stylelint": "^9.7.1",
-        "stylelint-config-property-sort-order-smacss": "^4.0.1",
+        "stylelint": "^11.1.1",
         "stylelint-order": "^1.0.0",
-        "stylelint-scss": "^3.3.2",
         "stylelint-webpack-plugin": "^0.10.5"
     }
 }
