@@ -1,16 +1,64 @@
-@import 'configuration/config';
-@import 'configuration/bem';
-@import 'configuration/colors';
-@import 'configuration/typography';
-@import 'configuration/layout';
-@import 'configuration/mixins';
-@import 'configuration/design';
+@import '~iis-styleguide/src/globals';
 
-@import 'utilities/layout';
+$namespace: 'iis-start-';
 
-@import 'foundation';
+@import '~iis-styleguide/src/configurations/grid/grid';
+@import '~iis-styleguide/src/configurations/colors/colors';
+@import '~iis-styleguide/src/configurations/colors/colors-functions';
+@import '~iis-styleguide/src/configurations/colors/text-colors';
+@import '~iis-styleguide/src/configurations/colors/background-colors';
+@import '~iis-styleguide/src/configurations/extends';
+@import '~iis-styleguide/src/configurations/typography/typography';
+@import '~iis-styleguide/src/configurations/forms/fields';
+@import '~iis-styleguide/src/configurations/wordpress';
+@import '~iis-styleguide/src/configurations/recaptcha';
 
-@import 'atoms/manifest';
-@import 'molecules/manifest';
-@import 'organisms/manifest';
-@import 'structures/manifest';
+// Atoms
+@import '~iis-styleguide/src/atoms/skip/skip';
+@import '~iis-styleguide/src/atoms/meta/meta';
+@import '~iis-styleguide/src/atoms/tag/tag';
+@import '~iis-styleguide/src/atoms/logotype/logotype';
+@import '~iis-styleguide/src/atoms/main-menu/main-menu';
+@import '~iis-styleguide/src/atoms/button/button';
+@import '~iis-styleguide/src/atoms/paging/paging';
+@import '~iis-styleguide/src/atoms/grid-toggle/grid-toggle';
+@import '~iis-styleguide/src/atoms/archive-link/archive-link';
+@import '~iis-styleguide/src/atoms/label/label';
+@import '~iis-styleguide/src/atoms/input/input';
+@import '~iis-styleguide/src/atoms/radiobutton/radiobutton';
+@import '~iis-styleguide/src/atoms/checkbox/checkbox';
+@import '~iis-styleguide/src/atoms/textarea/textarea';
+@import '~iis-styleguide/src/atoms/select/select';
+@import '~iis-styleguide/src/atoms/spinner/spinner';
+@import '~iis-styleguide/src/atoms/read-time/read-time';
+@import '~iis-styleguide/src/atoms/tooltip/tooltip';
+
+// Molecules
+@import '~iis-styleguide/src/molecules/breadcrumb/breadcrumb';
+@import '~iis-styleguide/src/molecules/card/card';
+@import '~iis-styleguide/src/molecules/teaser/teaser';
+@import '~iis-styleguide/src/molecules/download/download';
+@import '~iis-styleguide/src/molecules/teaser-news-list/teaser-news-list';
+@import '~iis-styleguide/src/molecules/form-control/form-control';
+@import '~iis-styleguide/src/molecules/alert/alert';
+@import '~iis-styleguide/src/molecules/table/table';
+@import '~iis-styleguide/src/molecules/system-error/system-error';
+@import '~iis-styleguide/src/molecules/info-box/info-box';
+@import '~iis-styleguide/src/molecules/share/share';
+@import '~iis-styleguide/src/molecules/cookie-disclaimer/cookie-disclaimer';
+@import '~iis-styleguide/src/molecules/byline/byline';
+
+// Organisms
+@import '~iis-styleguide/src/organisms/header/header';
+@import '~iis-styleguide/src/organisms/footer/footer';
+@import '~iis-styleguide/src/organisms/mega-menu/mega-menu';
+@import '~iis-styleguide/src/organisms/hero/hero';
+@import '~iis-styleguide/src/organisms/sections/sections';
+@import '~iis-styleguide/src/organisms/accordion/accordion';
+@import '~iis-styleguide/src/organisms/domain-search/domain-search';
+@import '~iis-styleguide/src/organisms/search-result/search-result';
+@import '~iis-styleguide/src/organisms/filter/filter';
+@import '~iis-styleguide/src/organisms/search/search';
+
+// Structures
+@import '~iis-styleguide/src/structures/manifest';

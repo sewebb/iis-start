@@ -8,7 +8,31 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div class="iis-start-site">
+		<div class="iis-start-site" id="site" data-namespace="iis-start-">
 			<header class="iis-start-o-header">
-				Header
+				<div class="wrapper">
+					<div class="row justify-content-between align-items-center flex-nowrap">
+						<div class="grid-auto">
+							<a href="/" class="u-link">
+								<span>IIS Start</span>
+								<span class="u-visuallyhidden">Till startsidan</span>
+							</a>
+						</div>
+						<div class="grid">
+							<nav class="iis-start-a-main-menu">
+								<ul class="iis-start-a-main-menu__list">
+									<li class="u-hidden-mobile">
+										<a href="https://styleguide.internetstiftelsen.se" class="iis-start-a-main-menu__list__link">
+											<span class="iis-start-a-main-menu__list__text">Styleguide documentation</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
 			</header>
+
+			<div class="iis-start-site__main" id="siteMain">
+

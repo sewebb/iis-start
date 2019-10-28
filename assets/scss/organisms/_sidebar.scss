@@ -1,6 +1,0 @@
-@include organism(sidebar) {
-	@extend %center-content;
-	@extend %background--dark-accent;
-
-	padding: rem($default-margin);
-}

@@ -39,3 +39,9 @@ $types = [ 'html', 'xhtml', 'atom', 'rss2', 'comment', 'export' ];
 foreach ( $types as $generator_type ) {
 	add_filter( 'get_the_generator_' . $generator_type, 'remove_generator_filter' );
 }
+
+function iis_start_css_namespace() {
+	return 'iis-start-';
+}
+
+add_filter( 'iis_blocks_namespace', 'iis_start_css_namespace' );

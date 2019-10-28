@@ -43,12 +43,8 @@
         "oscarotero/env":"^1.0",
         "koodimonni-language/core-sv_SE": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
-        "iis/library": "dev-master"
-    },
-    "autoload": {
-        "classmap": [
-            "www/app/themes/iis-start/inc/"
-        ]
+        "iis/library": "dev-master",
+        "iis/blocks": "dev-master"
     },
     "extra": {
         "wordpress-install-dir": "www/wp",

@@ -1,7 +1,0 @@
-@include organism(footer) {
-	@extend %center-content;
-	@extend %background--dark-shade;
-	@extend %color--white;
-
-	height: rem(200px);
-}
