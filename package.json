@@ -31,6 +31,6 @@
         "stylelint-webpack-plugin": "^0.10.5"
     },
     "dependencies": {
-        "iis-styleguide": "git+ssh://git@github.com/sewebb/iis-styleguide.git"
+        "iis-styleguide": "git+ssh://git@github.com/sewebb/iis-styleguide.git#3c29d0fc727e83d08bf14fc3752ab4b48cd847df"
     }
 }
