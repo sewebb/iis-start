@@ -1,4 +1,7 @@
 {
     "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
     "extends": "@internetstiftelsen/eslint-config"
 }
