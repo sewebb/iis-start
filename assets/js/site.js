@@ -3,21 +3,21 @@
  * Lazy import the component class instead of globally importing the module default.
  * To make this work with dynamically loaded content you need to add an observer
  */
-const forms = document.querySelectorAll('[data-form]');
+const buttons = document.querySelectorAll('[data-button]');
 
-if (forms.length) {
-	import('iis-styleguide/dist/molecules/form/Form')
-		.then(({ default: Form }) => forms.forEach((element) => new Form(element)))
+if (buttons.length) {
+	import('@internetstiftelsen/styleguide/dist/atoms/button/button')
+		.then((Button) => buttons.forEach((element) => (new Button(element)).start()))
 		.catch((ex) => {
 			console.warn('Could not load the Form component', ex);
 		});
 }
 
 /**
- * The following will auto initialize forms,
- * but will be imported even if there's no forms in the page
+ * The following will auto initialize basic functionality
+ * like accordions, context-menus, tab highlighting etc..
  *
- * import 'iis-styleguide/dist/molecules/form';
+ * import '@internetstiftelsen/styleguide';
  */
 
 /**
