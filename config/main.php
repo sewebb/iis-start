@@ -1,8 +1,10 @@
 <?php
 
-$root_dir = dirname( __DIR__ );
+$root_dir    = dirname( __DIR__ );
 $webroot_dir = $root_dir . '/www';
-$dotenv = new Dotenv\Dotenv( dirname( __DIR__ ) );
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createMutable( $root_dir );
 
 Env::init();
 
@@ -29,7 +31,7 @@ define( 'DB_HOST', env( 'DB_HOST' ) ?: 'localhost' );
 define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 
-define( 'CONTENT_DIR','/app' );
+define( 'CONTENT_DIR', '/app' );
 define( 'WP_CONTENT_DIR', $webroot_dir . '/app' );
 define( 'WP_CONTENT_URL', WP_HOME . '/app' );
 
