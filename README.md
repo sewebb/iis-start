@@ -57,11 +57,12 @@ It's recommended to configure `.browserslist` and when necessary install babel p
 Before pushing any code make sure that the code follows [the IIS Coding Conventions](https://github.com/sewebb/iis-start/wiki/IIS-Coding-Conventions).
 
 * `npm run eslint`
-* `npm run sasslint`
-* `npm run phplint`
+* `npm run stylelint`
 * `npm run htmllint`
 
 Or all at once with `npm run lint`.
+
+PHP can be linted with `composer test`. You can also use `composer php-fix` to auto-fix issues, and `composer php-blame` to see code sniffer summary for all contributors.
 
 ## Production
 
