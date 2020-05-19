@@ -1,4 +1,9 @@
-<?php get_header(); the_post(); ?>
+<?php
+
+get_header();
+the_post();
+
+?>
 <div class="iis-start-site__main__content">
 	<div class="wrapper">
 		<div class="row justify-content-center">
