@@ -25,6 +25,7 @@ $namespace: 'iis-start-';
 @import '~@internetstiftelsen/styleguide/src/atoms/archive-link/archive-link';
 @import '~@internetstiftelsen/styleguide/src/atoms/label/label';
 @import '~@internetstiftelsen/styleguide/src/atoms/input/input';
+@import '~@internetstiftelsen/styleguide/src/atoms/password-toggle/password-toggle';
 @import '~@internetstiftelsen/styleguide/src/atoms/radiobutton/radiobutton';
 @import '~@internetstiftelsen/styleguide/src/atoms/checkbox/checkbox';
 @import '~@internetstiftelsen/styleguide/src/atoms/textarea/textarea';
@@ -47,6 +48,8 @@ $namespace: 'iis-start-';
 @import '~@internetstiftelsen/styleguide/src/molecules/share/share';
 @import '~@internetstiftelsen/styleguide/src/molecules/cookie-disclaimer/cookie-disclaimer';
 @import '~@internetstiftelsen/styleguide/src/molecules/byline/byline';
+@import '~@internetstiftelsen/styleguide/src/molecules/context-menu/context-menu';
+@import '~@internetstiftelsen/styleguide/src/molecules/modal/modal';
 
 // Organisms
 @import '~@internetstiftelsen/styleguide/src/organisms/header/header';
@@ -59,6 +62,8 @@ $namespace: 'iis-start-';
 @import '~@internetstiftelsen/styleguide/src/organisms/search-result/search-result';
 @import '~@internetstiftelsen/styleguide/src/organisms/filter/filter';
 @import '~@internetstiftelsen/styleguide/src/organisms/search/search';
+@import '~@internetstiftelsen/styleguide/src/organisms/tabs/tabs';
+@import '~@internetstiftelsen/styleguide/src/organisms/mailchimp/mailchimp';
 
 // Structures
 @import '~@internetstiftelsen/styleguide/src/structures/manifest';
