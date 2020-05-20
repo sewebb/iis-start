@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b6878b5e0e732c17d498cce1222839b",
+    "content-hash": "bf4e9fe22c95f285c90635416fe9361f",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,16 +145,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "07656c7ba7d2af9bdd084b2e6cc5d52fe8efb746"
+                "reference": "c0d66dea243a47f59bcb63ea271fa787d4661ae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/07656c7ba7d2af9bdd084b2e6cc5d52fe8efb746",
-                "reference": "07656c7ba7d2af9bdd084b2e6cc5d52fe8efb746",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/c0d66dea243a47f59bcb63ea271fa787d4661ae4",
+                "reference": "c0d66dea243a47f59bcb63ea271fa787d4661ae4",
                 "shasum": ""
             },
             "require": {
@@ -173,11 +173,11 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-05-20T11:06:19+00:00"
+            "time": "2020-01-20T08:17:54+00:00"
         },
         {
             "name": "iis/library",
-            "version": "dev-develop",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
@@ -1735,7 +1735,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "iis/library": 20,
         "iis/blocks": 20,
         "wpackagist-plugin/query-monitor": 20,
         "wpackagist-plugin/debug-bar-console": 20,
