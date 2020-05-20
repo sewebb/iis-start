@@ -35,6 +35,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "@internetstiftelsen/styleguide": "^1.10.4"
+        "@internetstiftelsen/styleguide": "git+ssh://git@github.com/sewebb/iis-styleguide.git#b39b5c8bb7dc534032f5d8e964d26594579ad3d6"
     }
 }
