@@ -181,12 +181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
-                "reference": "e025a86436059e41a6fd36f5bfee253afca79b23"
+                "reference": "057abe95d5b4f42d0068739fbea3f5193cbc5489"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/e025a86436059e41a6fd36f5bfee253afca79b23",
-                "reference": "e025a86436059e41a6fd36f5bfee253afca79b23",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/057abe95d5b4f42d0068739fbea3f5193cbc5489",
+                "reference": "057abe95d5b4f42d0068739fbea3f5193cbc5489",
                 "shasum": ""
             },
             "require": {
@@ -204,7 +204,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "IIS\\Library\\": "src/"
+                    "Internetstiftelsen\\": "src/"
                 },
                 "files": [
                     "src/helpers.php"
@@ -228,7 +228,7 @@
                 "theme",
                 "wordpress"
             ],
-            "time": "2020-05-19T12:57:24+00:00"
+            "time": "2020-05-20T12:50:34+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
