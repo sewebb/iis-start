@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf4e9fe22c95f285c90635416fe9361f",
+    "content-hash": "1dbbfe9149527565e0c46a565d320d25",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,16 +145,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "c0d66dea243a47f59bcb63ea271fa787d4661ae4"
+                "reference": "950e744236ffb13f81423eed86281554f266681a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/c0d66dea243a47f59bcb63ea271fa787d4661ae4",
-                "reference": "c0d66dea243a47f59bcb63ea271fa787d4661ae4",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/950e744236ffb13f81423eed86281554f266681a",
+                "reference": "950e744236ffb13f81423eed86281554f266681a",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-01-20T08:17:54+00:00"
+            "time": "2020-05-26T08:23:26+00:00"
         },
         {
             "name": "iis/library",
@@ -592,16 +592,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1"
+                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/539bb6927c101a5605d31d11a2d17185a2ce2bf1",
-                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/0b32505d67c1abbfa829283c86bfc0642a661bf6",
+                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6",
                 "shasum": ""
             },
             "require": {
@@ -662,7 +662,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-02T14:08:57+00:00"
+            "time": "2020-05-23T09:43:32+00:00"
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
@@ -925,6 +925,7 @@
                 "slack",
                 "yarn"
             ],
+            "abandoned": true,
             "time": "2019-06-27T06:47:18+00:00"
         },
         {
@@ -1735,7 +1736,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "iis/blocks": 20,
         "wpackagist-plugin/query-monitor": 20,
         "wpackagist-plugin/debug-bar-console": 20,
         "wpackagist-plugin/rewrite-rules-inspector": 20
