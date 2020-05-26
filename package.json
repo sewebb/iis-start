@@ -20,7 +20,7 @@
         "@internetstiftelsen/eslint-config": "0.0.1",
         "@internetstiftelsen/stylelint-config": "0.0.1",
         "babel-eslint": "^10.1.0",
-        "dotenv-webpack": "^1.7.0",
+        "dotenv-webpack": "^1.8.0",
         "eslint": "^6.8.0",
         "eslint-loader": "^3.0.4",
         "eslint-plugin-import": "^2.20.2",
@@ -29,12 +29,12 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.26.5",
         "sass-loader": "^8.0.2",
-        "stylelint": "^13.3.3",
+        "stylelint": "^13.5.0",
         "stylelint-order": "^1.0.0",
         "stylelint-webpack-plugin": "^0.10.5",
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "@internetstiftelsen/styleguide": "git+ssh://git@github.com/sewebb/iis-styleguide.git#b39b5c8bb7dc534032f5d8e964d26594579ad3d6"
+        "@internetstiftelsen/styleguide": "^1.10.8"
     }
 }
