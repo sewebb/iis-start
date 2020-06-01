@@ -145,20 +145,25 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "950e744236ffb13f81423eed86281554f266681a"
+                "reference": "fb3878618e9a0d6e5327b1fbe28976e9a5b451cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/950e744236ffb13f81423eed86281554f266681a",
-                "reference": "950e744236ffb13f81423eed86281554f266681a",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/fb3878618e9a0d6e5327b1fbe28976e9a5b451cd",
+                "reference": "fb3878618e9a0d6e5327b1fbe28976e9a5b451cd",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "^1.1"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -173,7 +178,7 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-05-26T08:23:26+00:00"
+            "time": "2020-06-01T08:10:12+00:00"
         },
         {
             "name": "iis/library",
