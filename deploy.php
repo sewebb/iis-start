@@ -14,6 +14,8 @@ if ( file_exists( __DIR__ . '/.env' ) ) {
 	die( 'Please create an .env file to continue' );
 }
 
+echo date( 'Y-m-d H:i:s' ) . "\n";
+
 // Project name
 set( 'application', 'iis-start.iis.se' );
 
