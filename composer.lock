@@ -149,12 +149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "ffcbe196ce195f4e9035101f4ef60d42e4237437"
+                "reference": "81809616ade7a254367e08ed85e475b73db62a21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/ffcbe196ce195f4e9035101f4ef60d42e4237437",
-                "reference": "ffcbe196ce195f4e9035101f4ef60d42e4237437",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/81809616ade7a254367e08ed85e475b73db62a21",
+                "reference": "81809616ade7a254367e08ed85e475b73db62a21",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-06-03T11:58:33+00:00"
+            "time": "2020-06-03T13:23:18+00:00"
         },
         {
             "name": "iis/library",
