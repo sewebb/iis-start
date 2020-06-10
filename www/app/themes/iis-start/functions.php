@@ -49,3 +49,17 @@ $types = [ 'html', 'xhtml', 'atom', 'rss2', 'comment', 'export' ];
 foreach ( $types as $generator_type ) {
 	add_filter( 'get_the_generator_' . $generator_type, 'remove_generator_filter' );
 }
+
+add_filter(
+	'iis_blocks_puff_taxonomies',
+	function () {
+		return 'post_tag';
+	}
+);
+
+add_filter(
+	'iis_blocks_puff_post_type',
+	function () {
+		return [ 'post', 'page' ];
+	}
+);

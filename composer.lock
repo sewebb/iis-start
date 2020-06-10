@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cded16e45ecac70ca90d68a943458326",
+    "content-hash": "935c0567a85a1f6ea1331610034eee44",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,16 +145,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v3.0.0",
+            "version": "dev-feature/tag-improvements",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "548d1670000547d7cf603cfe9adf33360c42d491"
+                "reference": "df1604e3120405cf1c47e0c6a5348f5393ac54d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/548d1670000547d7cf603cfe9adf33360c42d491",
-                "reference": "548d1670000547d7cf603cfe9adf33360c42d491",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/df1604e3120405cf1c47e0c6a5348f5393ac54d2",
+                "reference": "df1604e3120405cf1c47e0c6a5348f5393ac54d2",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-06-08T09:08:57+00:00"
+            "time": "2020-06-10T14:48:37+00:00"
         },
         {
             "name": "iis/library",
@@ -681,15 +681,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "5.6.0",
+            "version": "5.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/5.6.0"
+                "reference": "tags/5.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.5.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.5.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2146,6 +2146,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "iis/blocks": 20,
         "wpackagist-plugin/query-monitor": 20,
         "wpackagist-plugin/debug-bar-console": 20,
         "wpackagist-plugin/rewrite-rules-inspector": 20
