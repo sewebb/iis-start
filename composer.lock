@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "935c0567a85a1f6ea1331610034eee44",
+    "content-hash": "6f3828a8cc14e96fe935cbc50193bfa9",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,16 +145,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "dev-feature/tag-improvements",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "df1604e3120405cf1c47e0c6a5348f5393ac54d2"
+                "reference": "3563a6df26d78feb339707c4550b6c27a9ae4d69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/df1604e3120405cf1c47e0c6a5348f5393ac54d2",
-                "reference": "df1604e3120405cf1c47e0c6a5348f5393ac54d2",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/3563a6df26d78feb339707c4550b6c27a9ae4d69",
+                "reference": "3563a6df26d78feb339707c4550b6c27a9ae4d69",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-06-10T14:48:37+00:00"
+            "time": "2020-06-11T09:06:55+00:00"
         },
         {
             "name": "iis/library",
@@ -2146,7 +2146,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "iis/blocks": 20,
         "wpackagist-plugin/query-monitor": 20,
         "wpackagist-plugin/debug-bar-console": 20,
         "wpackagist-plugin/rewrite-rules-inspector": 20

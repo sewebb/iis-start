@@ -43,7 +43,7 @@
         "oscarotero/env":"^1.2.0",
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
-        "iis/blocks": "dev-feature/tag-improvements",
+        "iis/blocks": "^3.1",
         "iis/library": "^1.0"
     },
     "extra": {
