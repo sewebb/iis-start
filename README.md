@@ -29,7 +29,6 @@ Do a "search & replace" (case sensitive) on the following:
 3. `iis-start-` to `my-theme-` for prefixed handles
 4. `IIS Start` to `My Theme` for names
 5. `iis-start` (without quotes) to `my-theme` for text-domain and css namespace
-6.
 
 ## Development environment
 
