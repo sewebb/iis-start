@@ -58,3 +58,7 @@ define( 'GRAPHTOOL_API', env( 'GRAPHTOOL_API' ) );
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', $webroot_dir . '/wp/' );
 }
+
+if ( ! defined( 'PROJECT_ROOT' ) ) {
+	define( 'PROJECT_ROOT', $root_dir );
+}
