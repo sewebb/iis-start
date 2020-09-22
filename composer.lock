@@ -145,16 +145,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v4.5.0",
+            "version": "v4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "98f2c4b22e15170d2f0a1ca90936f205ffb33260"
+                "reference": "636205f1e5f8ab666f8ee2b1009fc8f9ce4cd44f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/98f2c4b22e15170d2f0a1ca90936f205ffb33260",
-                "reference": "98f2c4b22e15170d2f0a1ca90936f205ffb33260",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/636205f1e5f8ab666f8ee2b1009fc8f9ce4cd44f",
+                "reference": "636205f1e5f8ab666f8ee2b1009fc8f9ce4cd44f",
                 "shasum": ""
             },
             "require": {
@@ -179,20 +179,20 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-09-10T12:17:00+00:00"
+            "time": "2020-09-21T08:37:32+00:00"
         },
         {
             "name": "iis/library",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
-                "reference": "d26861114dd4094a539a71ffde46ca6e0c453c99"
+                "reference": "1b605bd742d5d8d700ae550e00e90e450615b8f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/d26861114dd4094a539a71ffde46ca6e0c453c99",
-                "reference": "d26861114dd4094a539a71ffde46ca6e0c453c99",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/1b605bd742d5d8d700ae550e00e90e450615b8f8",
+                "reference": "1b605bd742d5d8d700ae550e00e90e450615b8f8",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
                 "theme",
                 "wordpress"
             ],
-            "time": "2020-09-10T13:17:30+00:00"
+            "time": "2020-09-16T12:07:46+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
