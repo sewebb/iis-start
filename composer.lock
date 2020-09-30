@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a0e5ab9fefbabf373ff440a151c5e73",
+    "content-hash": "7b4cf6cd387db7aba542e55ab4e00464",
     "packages": [
         {
             "name": "composer/installers",
@@ -145,16 +145,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v4.7.1",
+            "version": "v4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "e0185c7109ebdaf2e0fd305072a8435798bbedc6"
+                "reference": "218ed8e1d79bce24e532fb5901e656adf90641be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/e0185c7109ebdaf2e0fd305072a8435798bbedc6",
-                "reference": "e0185c7109ebdaf2e0fd305072a8435798bbedc6",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/218ed8e1d79bce24e532fb5901e656adf90641be",
+                "reference": "218ed8e1d79bce24e532fb5901e656adf90641be",
                 "shasum": ""
             },
             "require": {
@@ -179,20 +179,20 @@
                 }
             ],
             "description": "WP Blocks library",
-            "time": "2020-09-22T15:39:43+00:00"
+            "time": "2020-09-30T11:33:21+00:00"
         },
         {
             "name": "iis/library",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
-                "reference": "1b605bd742d5d8d700ae550e00e90e450615b8f8"
+                "reference": "dc9fe20bde2e8dd7fe392955c8c7ff12163ee192"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/1b605bd742d5d8d700ae550e00e90e450615b8f8",
-                "reference": "1b605bd742d5d8d700ae550e00e90e450615b8f8",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/dc9fe20bde2e8dd7fe392955c8c7ff12163ee192",
+                "reference": "dc9fe20bde2e8dd7fe392955c8c7ff12163ee192",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
                 "theme",
                 "wordpress"
             ],
-            "time": "2020-09-16T12:07:46+00:00"
+            "time": "2020-09-30T09:43:22+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
