@@ -40,7 +40,11 @@ mix.webpackConfig({
 			local: path.resolve(__dirname, 'assets/js'),
 		},
 	},
-	output: { chunkFilename: 'assets/js/chunks/[name].chunk.js?id=[chunkhash]', publicPath: '/app/themes/iis-start/' },
+	output: {
+		chunkFilename: 'assets/js/chunks/[name].chunk.js?id=[chunkhash]',
+		publicPath: '/app/themes/iis-start/',
+		jsonpFunction: 'wpJsonpInternetstiftelsen',
+	},
 });
 
 mix
