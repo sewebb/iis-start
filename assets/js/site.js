@@ -1,3 +1,5 @@
+import '@internetstiftelsen/styleguide/dist/components';
+
 /**
  * Example of codespliting styleguide components.
  * Lazy import the component class instead of globally importing the module default.
