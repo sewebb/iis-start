@@ -48,6 +48,8 @@ define( 'NONCE_SALT', env( 'NONCE_SALT' ) );
 
 define( 'DISALLOW_FILE_MODS', true );
 
+define( 'GRAPHTOOL_API', env( 'GRAPHTOOL_API' ) );
+
 /**
  * Theme specifics
  */
