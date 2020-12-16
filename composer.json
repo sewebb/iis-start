@@ -44,7 +44,7 @@
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
         "iis/blocks": "^4.7",
-        "iis/library": "^1.4"
+        "iis/library": "^1.6"
     },
     "extra": {
         "wordpress-install-dir": "www/wp",

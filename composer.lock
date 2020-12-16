@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b4cf6cd387db7aba542e55ab4e00464",
+    "content-hash": "3e243386776150bff3d54b77e76ffbfe",
     "packages": [
         {
             "name": "composer/installers",
@@ -183,16 +183,16 @@
         },
         {
             "name": "iis/library",
-            "version": "v1.4.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
-                "reference": "dc9fe20bde2e8dd7fe392955c8c7ff12163ee192"
+                "reference": "61e55c35a4e981a91100bb7a59eb91ca3db79c20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/dc9fe20bde2e8dd7fe392955c8c7ff12163ee192",
-                "reference": "dc9fe20bde2e8dd7fe392955c8c7ff12163ee192",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/61e55c35a4e981a91100bb7a59eb91ca3db79c20",
+                "reference": "61e55c35a4e981a91100bb7a59eb91ca3db79c20",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
                 "theme",
                 "wordpress"
             ],
-            "time": "2020-09-30T09:43:22+00:00"
+            "time": "2020-12-16T08:41:52+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
