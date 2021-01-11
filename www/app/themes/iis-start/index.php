@@ -10,6 +10,7 @@ the_post();
 			<div class="row justify-content-center">
 				<div class="grid-18">
 					<div class="iis-start-article">
+						<h1><?php the_title(); ?></h1>
 						<div class="iis-start-article__content">
 							<?php the_content(); ?>
 						</div>
