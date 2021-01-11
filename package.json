@@ -35,6 +35,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "@internetstiftelsen/styleguide": "^2.8.1"
+        "@internetstiftelsen/styleguide": "^2.10.0"
     }
 }
