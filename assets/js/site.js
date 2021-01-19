@@ -1,3 +1,8 @@
+/**
+ * The following will auto initialize basic functionality
+ * like accordions, context-menus, tab highlighting etc..
+ *
+ */
 import '@internetstiftelsen/styleguide/dist/components';
 
 /**
@@ -14,13 +19,6 @@ if (buttons.length) {
 			console.warn('Could not load the Form component', ex);
 		});
 }
-
-/**
- * The following will auto initialize basic functionality
- * like accordions, context-menus, tab highlighting etc..
- *
- * import '@internetstiftelsen/styleguide';
- */
 
 /**
  * Main entry point for the javascript bundle.
