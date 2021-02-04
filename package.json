@@ -35,6 +35,10 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+<<<<<<< Updated upstream
         "@internetstiftelsen/styleguide": "^1.11.10"
+=======
+        "@internetstiftelsen/styleguide": "^2.11.2"
+>>>>>>> Stashed changes
     }
 }

@@ -33,6 +33,22 @@
         {
             "type": "composer",
             "url": "https://wp-languages.github.io"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "5.9.3",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%VERSION}"
+                },
+                "require": {
+                    "composer/installers": "^1.4",
+                    "ffraenz/private-composer-installer": "^4.0"
+                }
+            }
         }
     ],
     "require": {
@@ -43,8 +59,14 @@
         "oscarotero/env":"^1.2.0",
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
+<<<<<<< Updated upstream
         "iis/blocks": "^3.1",
         "iis/library": "^1.0"
+=======
+        "iis/blocks": "^5.3",
+        "iis/library": "^1.6",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*"
+>>>>>>> Stashed changes
     },
     "extra": {
         "wordpress-install-dir": "www/wp",
