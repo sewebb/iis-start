@@ -1,4 +1,12 @@
 /**
+ * The following will auto initialize basic functionality
+ * like accordions, context-menus, tab highlighting etc..
+ *
+ * import '@internetstiftelsen/styleguide';
+ */
+import '@internetstiftelsen/styleguide';
+
+/**
  * Example of codespliting styleguide components.
  * Lazy import the component class instead of globally importing the module default.
  * To make this work with dynamically loaded content you need to add an observer
@@ -12,13 +20,6 @@ if (buttons.length) {
 			console.warn('Could not load the Form component', ex);
 		});
 }
-
-/**
- * The following will auto initialize basic functionality
- * like accordions, context-menus, tab highlighting etc..
- *
- * import '@internetstiftelsen/styleguide';
- */
 
 /**
  * Main entry point for the javascript bundle.
