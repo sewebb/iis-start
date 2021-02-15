@@ -48,6 +48,8 @@ define( 'NONCE_SALT', env( 'NONCE_SALT' ) );
 
 define( 'DISALLOW_FILE_MODS', true );
 
+define( 'GRAPHTOOL_API', env( 'GRAPHTOOL_API' ) );
+
 /**
  * Theme specifics
  */
@@ -57,4 +59,8 @@ define( 'GRAPHTOOL_API', env( 'GRAPHTOOL_API' ) );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', $webroot_dir . '/wp/' );
+}
+
+if ( ! defined( 'PROJECT_ROOT' ) ) {
+	define( 'PROJECT_ROOT', $root_dir );
 }

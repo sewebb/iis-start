@@ -2,6 +2,8 @@
 
 $namespace: 'iis-start-';
 
+@import 'theme';
+
 @import '~@internetstiftelsen/styleguide/src/configurations/grid/grid';
 @import '~@internetstiftelsen/styleguide/src/configurations/colors/colors';
 @import '~@internetstiftelsen/styleguide/src/configurations/colors/colors-functions';
@@ -49,6 +51,7 @@ $namespace: 'iis-start-';
 @import '~@internetstiftelsen/styleguide/src/molecules/byline/byline';
 @import '~@internetstiftelsen/styleguide/src/molecules/context-menu/context-menu';
 @import '~@internetstiftelsen/styleguide/src/molecules/modal/modal';
+@import '~@internetstiftelsen/styleguide/src/molecules/submenu/submenu';
 
 // Organisms
 @import '~@internetstiftelsen/styleguide/src/organisms/header/header';

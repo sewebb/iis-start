@@ -14,7 +14,12 @@ if ( file_exists( __DIR__ . '/.env' ) ) {
 	die( 'Please create an .env file to continue' );
 }
 
-echo date( 'Y-m-d H:i:s' ) . "\n";
+/**
+ * Clear transients listed in this array
+ */
+$clear_transients = [
+	'iis_styleguide_sprite',
+];
 
 // Project name
 set( 'application', 'iis-start.iis.se' );
@@ -70,6 +75,15 @@ task(
 	}
 );
 
+task(
+	'wp:clear-transients',
+	function () use ( $clear_transients ) {
+		foreach ( $clear_transients as $transient ) {
+			run( 'cd {{deploy_path}}/current/www/wp &&  wp transient delete ' . $transient );
+		}
+	}
+);
+
 
 desc( 'Deploy your project' );
 task(
@@ -101,3 +115,5 @@ after( 'deploy:failed', 'deploy:unlock' );
 
 after( 'deploy:shared', 'npm:install' );
 after( 'deploy:shared', 'npm:production' );
+
+before( 'cleanup', 'wp:clear-transients' );
