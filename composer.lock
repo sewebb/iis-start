@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f2ff02d9fd3a15ac5337f0f7c3e1c7c",
+    "content-hash": "b9989550343409fa6dc3788fe5231efd",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -258,16 +258,16 @@
         },
         {
             "name": "iis/library",
-            "version": "v1.6.1",
+            "version": "v1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
-                "reference": "0ddfe75b05a6559cc4a0f4408a1b4a2349741173"
+                "reference": "ec1a5b43c800a8d4ece179bf56aac2b45ae0319d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/0ddfe75b05a6559cc4a0f4408a1b4a2349741173",
-                "reference": "0ddfe75b05a6559cc4a0f4408a1b4a2349741173",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/ec1a5b43c800a8d4ece179bf56aac2b45ae0319d",
+                "reference": "ec1a5b43c800a8d4ece179bf56aac2b45ae0319d",
                 "shasum": ""
             },
             "require": {
@@ -309,7 +309,7 @@
                 "theme",
                 "wordpress"
             ],
-            "time": "2021-01-13T08:45:17+00:00"
+            "time": "2021-02-22T12:42:09+00:00"
         },
         {
             "name": "johnpbloch/wordpress",

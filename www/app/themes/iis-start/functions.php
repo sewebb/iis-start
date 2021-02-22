@@ -63,3 +63,10 @@ add_filter(
 		return [ 'post', 'page' ];
 	}
 );
+
+add_filter(
+	'iis_render_submenu',
+	function () {
+		return ! is_page_template( 'no-submenu.php' );
+	}
+);
