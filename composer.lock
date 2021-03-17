@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7527c090d17ddd62df0b63f9efbcda4f",
+    "content-hash": "9e5cf76bec12df0d4bbdf7f57b0d8259",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -236,16 +236,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v5.6.1",
+            "version": "v5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "95cd2269176c598fd40c08f2c83797e955ea76b6"
+                "reference": "25817a2243aa6988b9ca7022c7855272a7b60737"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/95cd2269176c598fd40c08f2c83797e955ea76b6",
-                "reference": "95cd2269176c598fd40c08f2c83797e955ea76b6",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/25817a2243aa6988b9ca7022c7855272a7b60737",
+                "reference": "25817a2243aa6988b9ca7022c7855272a7b60737",
                 "shasum": ""
             },
             "require": {
@@ -272,22 +272,22 @@
             "description": "WP Blocks library",
             "support": {
                 "issues": "https://github.com/sewebb/iis-blocks/issues",
-                "source": "https://github.com/sewebb/iis-blocks/tree/v5.6.1"
+                "source": "https://github.com/sewebb/iis-blocks/tree/v5.6.2"
             },
-            "time": "2021-03-11T12:51:11+00:00"
+            "time": "2021-03-17T14:57:04+00:00"
         },
         {
             "name": "iis/library",
-            "version": "v1.10.4",
+            "version": "v1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-library.git",
-                "reference": "61ad4a060114cf22619f72a51871394c24816f33"
+                "reference": "f65171053048af92cf55f7a7c537ee6543e01d62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/61ad4a060114cf22619f72a51871394c24816f33",
-                "reference": "61ad4a060114cf22619f72a51871394c24816f33",
+                "url": "https://api.github.com/repos/sewebb/iis-library/zipball/f65171053048af92cf55f7a7c537ee6543e01d62",
+                "reference": "f65171053048af92cf55f7a7c537ee6543e01d62",
                 "shasum": ""
             },
             "require": {
@@ -331,9 +331,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sewebb/iis-library/issues",
-                "source": "https://github.com/sewebb/iis-library/tree/v1.10.4"
+                "source": "https://github.com/sewebb/iis-library/tree/v1.11.1"
             },
-            "time": "2021-03-15T15:19:13+00:00"
+            "time": "2021-03-17T13:30:32+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
