@@ -5,13 +5,13 @@ the_post();
 
 ?>
 <div class="iis-start-site__main__content">
-	<div class="iis-start-section<?php echo ( iis_has_full_hero() ) ? ' u-m-t-0' : ''; ?>">
+	<div class="iis-start-section u-m-t-0">
 		<div class="wrapper">
 			<div class="row justify-content-center">
 				<div class="grid-18">
 					<div class="iis-start-article">
 						<?php if ( ! iis_has_hero() ) : ?>
-						<h1><?php the_title(); ?></h1>
+						<h1 class="u-m-t-4"><?php the_title(); ?></h1>
 						<?php endif; ?>
 						<div class="iis-start-article__content">
 							<?php the_content(); ?>
