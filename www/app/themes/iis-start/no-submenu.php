@@ -1,5 +1,4 @@
 <?php
-
 /*
 Template Name: No submenu
 */
@@ -17,7 +16,7 @@ the_post();
 						<?php if ( ! iis_has_hero() ) : ?>
 						<h1><?php the_title(); ?></h1>
 						<?php endif; ?>
-						<div class="iis-start-article__content">
+						<div class="iis-start-article__content iis-start-article__content--full-width">
 							<?php the_content(); ?>
 						</div>
 					</div>
