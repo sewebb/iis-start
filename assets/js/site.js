@@ -14,7 +14,7 @@ import '@internetstiftelsen/styleguide';
 const buttons = document.querySelectorAll('[data-button]');
 
 if (buttons.length) {
-	import('@internetstiftelsen/styleguide/dist/atoms/button/button')
+	import('@internetstiftelsen/styleguide/dist/atoms/button/Button')
 		.then((Button) => buttons.forEach((element) => (new Button(element)).start()))
 		.catch((ex) => {
 			console.warn('Could not load the Form component', ex);
