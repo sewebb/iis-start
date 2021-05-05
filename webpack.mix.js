@@ -3,18 +3,6 @@ const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
-mix.options({
-	uglify: {
-		uglifyOptions: {
-			compress: {
-				drop_console: true,
-				dead_code: true,
-				pure_funcs: ['console.warn'],
-			},
-		},
-	},
-});
-
 mix.webpackConfig({
 	module: {
 		rules: [
@@ -43,13 +31,12 @@ mix.webpackConfig({
 	output: {
 		chunkFilename: 'assets/js/chunks/[name].chunk.js?id=[chunkhash]',
 		publicPath: '/app/themes/iis-start/',
-		jsonpFunction: 'wpJsonpIisStart',
 	},
 });
 
 mix
-	.js('./assets/js/site.js', './www/app/themes/iis-start/assets/js/site.js')
-	.sass('./assets/scss/site.scss', './www/app/themes/iis-start/assets/css')
+	.js('./assets/js/site.js', 'assets/js/site.js')
+	.sass('./assets/scss/site.scss', 'assets/css/site.css')
 	// .browserSync('iis.test')
 	.version()
 	.setPublicPath('./www/app/themes/iis-start/')
