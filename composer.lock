@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdb5eed312f566519e7a33e5c51f6d02",
+    "content-hash": "884d05a082cee340b9ac9d8c0a56ec21",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -238,7 +238,7 @@
         },
         {
             "name": "iis/blocks",
-            "version": "dev-develop",
+            "version": "v6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
@@ -274,7 +274,7 @@
             "description": "WP Blocks library",
             "support": {
                 "issues": "https://github.com/sewebb/iis-blocks/issues",
-                "source": "https://github.com/sewebb/iis-blocks/tree/develop"
+                "source": "https://github.com/sewebb/iis-blocks/tree/v6.0.3"
             },
             "time": "2021-06-11T09:08:37+00:00"
         },
@@ -2371,7 +2371,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "iis/blocks": 20,
         "wpackagist-plugin/query-monitor": 20,
         "wpackagist-plugin/debug-bar-console": 20,
         "wpackagist-plugin/rewrite-rules-inspector": 20
