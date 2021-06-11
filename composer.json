@@ -55,7 +55,7 @@
         "php": "^7.3",
         "composer/installers": "~1.0",
         "vlucas/phpdotenv": "^4",
-        "johnpbloch/wordpress": "^5.4",
+        "johnpbloch/wordpress": "^5.7.2",
         "oscarotero/env":"^1.2.0",
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
