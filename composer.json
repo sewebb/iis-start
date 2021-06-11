@@ -59,7 +59,7 @@
         "oscarotero/env":"^1.2.0",
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
-        "iis/blocks": "^6.0.2",
+        "iis/blocks": "^6.0.4",
         "iis/library": "^2.0.2",
         "advanced-custom-fields/advanced-custom-fields-pro": "*"
     },

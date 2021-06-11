@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "884d05a082cee340b9ac9d8c0a56ec21",
+    "content-hash": "b982515b06a837d518b93860991034e7",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -238,16 +238,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v6.0.3",
+            "version": "v6.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "f72c4696685e7f21226365165dbf140a619e19c7"
+                "reference": "7ffb605955d69a6700147a7bc833da7a8f056d80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/f72c4696685e7f21226365165dbf140a619e19c7",
-                "reference": "f72c4696685e7f21226365165dbf140a619e19c7",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/7ffb605955d69a6700147a7bc833da7a8f056d80",
+                "reference": "7ffb605955d69a6700147a7bc833da7a8f056d80",
                 "shasum": ""
             },
             "require": {
@@ -274,9 +274,9 @@
             "description": "WP Blocks library",
             "support": {
                 "issues": "https://github.com/sewebb/iis-blocks/issues",
-                "source": "https://github.com/sewebb/iis-blocks/tree/v6.0.3"
+                "source": "https://github.com/sewebb/iis-blocks/tree/v6.0.4"
             },
-            "time": "2021-06-11T09:08:37+00:00"
+            "time": "2021-06-11T13:40:24+00:00"
         },
         {
             "name": "iis/library",
