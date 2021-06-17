@@ -12,7 +12,7 @@
         "production": "mix --production",
         "eslint": "eslint assets --ext .jsx --ext .js",
         "stylelint": "./node_modules/.bin/stylelint \"assets/**/*.scss\"",
-        "lint": "npm run eslint && npm run stylelint && npm run htmllint"
+        "lint": "npm run eslint && npm run stylelint"
     },
     "devDependencies": {
         "@babel/plugin-proposal-class-properties": "^7.8.3",
