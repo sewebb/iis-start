@@ -70,3 +70,18 @@ add_filter(
 		return ! is_page_template( 'no-submenu.php' );
 	}
 );
+
+function iis_configure_bugsnag() {
+	// phpcs:disable WordPress.NamingConventions.ValidVariableName.NotSnakeCase
+	global $bugsnagWordpress;
+
+	if ( ! isset( $bugsnagWordpress ) ) {
+		return;
+	}
+
+	$bugsnagWordpress->setNotifyReleaseStages( [ 'stage', 'production' ] );
+	$bugsnagWordpress->setReleaseStage( env( 'WP_ENV' ) );
+	// phpcs:enable WordPress.NamingConventions.ValidVariableName.NotSnakeCase
+}
+
+iis_configure_bugsnag();

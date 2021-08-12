@@ -3,5 +3,8 @@
     "env": {
         "browser": true
     },
+    "globals": {
+        "VERSION": true
+    },
     "extends": "@internetstiftelsen/eslint-config"
 }

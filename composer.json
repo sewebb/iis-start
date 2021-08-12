@@ -88,9 +88,9 @@
         "deployer/recipes": "^6.2"
     },
     "scripts": {
-        "test": "./vendor/bin/phpcs -p --standard=wordpress-rules.xml --extensions=php ./www/app/themes",
-        "php-fix": "./vendor/bin/phpcbf -p --standard=wordpress-rules.xml --extensions=php ./www/app/themes",
-        "php-blame": "./vendor/bin/phpcs -p --standard=wordpress-rules.xml --report=gitblame --extensions=php ./www/app/themes"
+        "test": "./vendor/bin/phpcs -s -p --standard=phpcs.xml --extensions=php ./www/app/themes",
+        "php-fix": "./vendor/bin/phpcbf -p --standard=phpcs.xml --extensions=php ./www/app/themes",
+        "php-blame": "./vendor/bin/phpcs -p --standard=phpcs.xml --report=gitblame --extensions=php ./www/app/themes"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
