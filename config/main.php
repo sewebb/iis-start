@@ -53,7 +53,7 @@ define( 'DISALLOW_FILE_MODS', true );
  */
 define( 'MAILCHIMP_USERNAME', env( 'MAILCHIMP_USERNAME' ) );
 define( 'MAILCHIMP_API_KEY', env( 'MAILCHIMP_API_KEY' ) );
-define( 'GRAPHTOOL_API', env( 'GRAPHTOOL_API' ) );
+define( 'GRAPHTOOL', env( 'GRAPHTOOL' ) );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', $webroot_dir . '/wp/' );
