@@ -42,6 +42,6 @@
     },
     "dependencies": {
         "@bugsnag/js": "^7.11.0",
-        "@internetstiftelsen/styleguide": "^2.17.16"
+        "@internetstiftelsen/styleguide": "^2.17.18"
     }
 }
