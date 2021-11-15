@@ -6,5 +6,5 @@
     "globals": {
         "VERSION": true
     },
-    "extends": "@internetstiftelsen/eslint-config"
+    "extends": "@internetstiftelsen/eslint-config-react"
 }
