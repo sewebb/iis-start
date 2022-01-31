@@ -93,5 +93,14 @@
         "php-blame": "./vendor/bin/phpcs -p --standard=phpcs.xml --report=gitblame --extensions=php ./www/app/themes"
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ffraenz/private-composer-installer": true,
+            "johnpbloch/wordpress-core-installer": true,
+            "koodimonni/composer-dropin-installer": true
+        }
+    }
 }
