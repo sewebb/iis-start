@@ -60,7 +60,7 @@
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
         "iis/blocks": "^6.2",
-        "iis/library": "^3.0",
+        "iis/library": "^4.0",
         "advanced-custom-fields/advanced-custom-fields-pro": "*"
     },
     "extra": {
