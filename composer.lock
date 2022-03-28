@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2040aa7ed5f75847a2bb5a17ac082335",
+    "content-hash": "5fe923c15cea93eb9251a061825c98d2",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -280,6 +280,45 @@
                 "source": "https://github.com/sewebb/iis-blocks/tree/v6.2.15"
             },
             "time": "2022-03-24T13:38:50+00:00"
+        },
+        {
+            "name": "iis/iis-footer",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sewebb/iis-footer.git",
+                "reference": "2cf159837227b1e7197603117610da0f11d5ff60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sewebb/iis-footer/zipball/2cf159837227b1e7197603117610da0f11d5ff60",
+                "reference": "2cf159837227b1e7197603117610da0f11d5ff60",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=7.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Jonas Nordström",
+                    "email": "jonas.nordstrom@gmail.com",
+                    "homepage": "http://wpbyran.se"
+                }
+            ],
+            "description": "Display common footer for internetstiftelsen sites",
+            "homepage": "https://internetstiftelsen.se",
+            "keywords": [
+                "footer",
+                "iis",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/sewebb/iis-footer/tree/v2.0.2",
+                "issues": "https://github.com/sewebb/iis-footer/issues"
+            },
+            "time": "2022-03-03T14:12:10+00:00"
         },
         {
             "name": "iis/library",

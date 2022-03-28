@@ -35,6 +35,10 @@
             "url": "https://wp-languages.github.io"
         },
         {
+            "type": "vcs",
+            "url": "git@github.com:sewebb/iis-footer.git"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -61,6 +65,7 @@
         "wpackagist-plugin/wp-retina-2x": "*",
         "iis/blocks": "^6.2",
         "iis/library": "^4.0",
+        "iis/iis-footer": "^2.0",
         "advanced-custom-fields/advanced-custom-fields-pro": "*"
     },
     "extra": {
