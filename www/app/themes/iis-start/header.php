@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="apple-touch-icon" sizes="180x180" href="https://static.iis.se/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="https://static.iis.se/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="https://static.iis.se/favicons/favicon-16x16.png">
-		<link rel="manifest" href="https://static.iis.se/favicons/site.webmanifest">
-		<link rel="mask-icon" href="https://static.iis.se/favicons/safari-pinned-tab.svg" color="#ff4069">
-		<link rel="shortcut icon" href="https://static.iis.se/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://static.internetstiftelsen.se/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://static.internetstiftelsen.se/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://static.internetstiftelsen.se/favicons/favicon-16x16.png">
+		<link rel="manifest" href="https://static.internetstiftelsen.se/favicons/site.webmanifest">
+		<link rel="mask-icon" href="https://static.internetstiftelsen.se/favicons/safari-pinned-tab.svg" color="#ff4069">
+		<link rel="shortcut icon" href="https://static.internetstiftelsen.se/favicons/favicon.ico">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-config" content="https://static.iis.se/favicons/browserconfig.xml">
+		<meta name="msapplication-config" content="https://static.internetstiftelsen.se/favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="supported-color-schemes" content="light">
