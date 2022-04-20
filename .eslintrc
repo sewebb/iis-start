@@ -1,10 +1,10 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
+    "extends": "@internetstiftelsen/eslint-config-react",
     "env": {
         "browser": true
     },
     "globals": {
         "VERSION": true
-    },
-    "extends": "@internetstiftelsen/eslint-config-react"
+    }
 }

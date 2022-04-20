@@ -1,4 +1,5 @@
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const webpack = require('webpack');
@@ -8,6 +9,9 @@ const devMode = process.env.NODE_ENV !== 'production';
 const plugins = [
 	new StyleLintPlugin({
 		files: 'assets/**/*.scss',
+	}),
+	new ESLintPlugin({
+		extensions: ['js', 'jsx'],
 	}),
 	new Dotenv(),
 ];
@@ -37,16 +41,6 @@ plugins.push(new webpack.DefinePlugin({
 }));
 
 module.exports = {
-	module: {
-		rules: [
-			{
-				enforce: 'pre',
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loader: 'eslint-loader',
-			},
-		],
-	},
 	plugins,
 	resolve: {
 		modules: [
