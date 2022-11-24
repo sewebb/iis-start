@@ -5,6 +5,7 @@ require 'recipe/common.php';
 require 'recipe/npm.php';
 require 'recipe/slack.php';
 use Dotenv\Dotenv;
+use function Env\env;
 
 $dotenv = Dotenv::createMutable( __DIR__ );
 
