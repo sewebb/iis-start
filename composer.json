@@ -56,10 +56,10 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.1",
         "composer/installers": "~1.0",
         "vlucas/phpdotenv": "^4",
-        "johnpbloch/wordpress": "^5.7.2",
+        "johnpbloch/wordpress": "^6.1.1",
         "oscarotero/env":"^1.2.0",
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
