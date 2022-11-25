@@ -7,7 +7,7 @@ require 'recipe/slack.php';
 use Dotenv\Dotenv;
 use function Env\env;
 
-$dotenv = Dotenv::createMutable( __DIR__ );
+$dotenv = Dotenv::createUnsafeImmutable( __DIR__ );
 
 if ( file_exists( __DIR__ . '/.env' ) ) {
 	$dotenv->load();
