@@ -4,7 +4,7 @@ $root_dir    = dirname( __DIR__ );
 $webroot_dir = $root_dir . '/www';
 use Dotenv\Dotenv;
 use function Env\env;
-$dotenv = Dotenv::createMutable( $root_dir );
+$dotenv = Dotenv::createUnsafeImmutable( $root_dir );
 
 if ( file_exists( dirname( __DIR__ ) . '/.env' ) ) {
 	$dotenv->load();
