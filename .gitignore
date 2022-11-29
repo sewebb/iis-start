@@ -2,8 +2,7 @@
 www/app/uploads
 www/app/mu-plugins
 www/app/languages
-www/app/themes/bredbandskollen/js/app.min.js
-www/app/themes/bredbandskollen/css/app.css
+www/app/themes/assets/
 www/wp/
 www/app/db.php
 mix-manifest.json

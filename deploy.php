@@ -72,7 +72,7 @@ task( 'npm:production', 'npm run production' );
 task(
 	'reload:php-fpm',
 	function () {
-		run( 'sudo /etc/init.d/php7.4-fpm reload' );
+		run( 'sudo /etc/init.d/php8.1-fpm reload' );
 	}
 );
 
