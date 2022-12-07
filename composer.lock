@@ -301,16 +301,16 @@
         },
         {
             "name": "iis/blocks",
-            "version": "v6.3.8",
+            "version": "v6.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sewebb/iis-blocks.git",
-                "reference": "95239c9e6f9feac160e06e3707ddfb17aaff0631"
+                "reference": "453f6dbf2688032461a7e1bd076f9a5d37f9a251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/95239c9e6f9feac160e06e3707ddfb17aaff0631",
-                "reference": "95239c9e6f9feac160e06e3707ddfb17aaff0631",
+                "url": "https://api.github.com/repos/sewebb/iis-blocks/zipball/453f6dbf2688032461a7e1bd076f9a5d37f9a251",
+                "reference": "453f6dbf2688032461a7e1bd076f9a5d37f9a251",
                 "shasum": ""
             },
             "require": {
@@ -339,22 +339,22 @@
             "description": "WP Blocks library",
             "support": {
                 "issues": "https://github.com/sewebb/iis-blocks/issues",
-                "source": "https://github.com/sewebb/iis-blocks/tree/v6.3.8"
+                "source": "https://github.com/sewebb/iis-blocks/tree/v6.3.9"
             },
-            "time": "2022-10-25T06:17:20+00:00"
+            "time": "2022-12-02T07:26:04+00:00"
         },
         {
             "name": "iis/iis-footer",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:sewebb/iis-footer.git",
-                "reference": "5c98cdeda17ebadd68312fb29e3806f6f6a95c54"
+                "reference": "be0d025e03f7cb4c7149e079c325804c53a047fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sewebb/iis-footer/zipball/5c98cdeda17ebadd68312fb29e3806f6f6a95c54",
-                "reference": "5c98cdeda17ebadd68312fb29e3806f6f6a95c54",
+                "url": "https://api.github.com/repos/sewebb/iis-footer/zipball/be0d025e03f7cb4c7149e079c325804c53a047fe",
+                "reference": "be0d025e03f7cb4c7149e079c325804c53a047fe",
                 "shasum": ""
             },
             "require": {
@@ -377,10 +377,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/sewebb/iis-footer/tree/v2.0.3",
+                "source": "https://github.com/sewebb/iis-footer/tree/v2.0.4",
                 "issues": "https://github.com/sewebb/iis-footer/issues"
             },
-            "time": "2022-09-26T13:09:35+00:00"
+            "time": "2022-12-01T08:13:41+00:00"
         },
         {
             "name": "iis/library",
@@ -1122,15 +1122,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "6.3.5",
+            "version": "6.3.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/6.3.5"
+                "reference": "tags/6.3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.6.3.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.6.3.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1494,16 +1494,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v6.1.6",
+            "version": "v6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "0f0adde127f24548e23cbde83bcaeadc491c551f"
+                "reference": "1e7544c8698627b908657e5276854d52ab70087a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0f0adde127f24548e23cbde83bcaeadc491c551f",
-                "reference": "0f0adde127f24548e23cbde83bcaeadc491c551f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1e7544c8698627b908657e5276854d52ab70087a",
+                "reference": "1e7544c8698627b908657e5276854d52ab70087a",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v6.1.6"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.2.1"
             },
             "funding": [
                 {
@@ -1578,7 +1578,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-07T08:04:03+00:00"
+            "time": "2022-12-03T22:32:58+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
