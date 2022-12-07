@@ -2,17 +2,20 @@
 namespace Deployer;
 
 require 'recipe/common.php';
-require 'recipe/npm.php';
-require 'recipe/slack.php';
-use Dotenv\Dotenv;
-use function Env\env;
+require 'contrib/npm.php';
+require 'contrib/slack.php';
+
+define( 'BASEPATH', __DIR__ );
+
+require BASEPATH . '/vendor/autoload.php';
+use \Dotenv\Dotenv;
 
 $dotenv = Dotenv::createUnsafeImmutable( __DIR__ );
 
 if ( file_exists( __DIR__ . '/.env' ) ) {
 	$dotenv->load();
 } else {
-	die( 'Please create an .env file to continue' );
+	exit( 'Please create an .env file to continue' );
 }
 
 /**
@@ -30,8 +33,6 @@ set( 'repository', 'git@github.com:sewebb/iis-start.git' );
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set( 'git_tty', true );
-
-set( 'ssh_type', 'native' );
 
 // Shared files/dirs between deploys
 set(
@@ -56,23 +57,28 @@ set(
 set( 'allow_anonymous_stats', false );
 
 set( 'slack_webhook', getenv( 'SLACK_WEBHOOK' ) );
-set( 'slack_text', '_{{user}}_ deploying `{{branch}}` to *{{target}}*' );
-set( 'slack_success_text', 'Deploy to *{{target}}* successful' );
-set( 'slack_failure_text', 'Deploy to *{{target}}* failed' );
+set( 'slack_text', '_{{user}}_ deploying `{{target}}` to *{{host}}*' );
+set( 'slack_success_text', 'Deploy to *{{host}}* successful' );
+set( 'slack_failure_text', 'Deploy to *{{host}}* failed' );
 
 // Hosts
 host( 'stage' )
-	->user( 'www-adm' )
-	->hostname( getenv( 'DEPLOY_STAGE_IP' ) )
-	->set( 'deploy_path', '/var/www/{{application}}' );
+	->setRemoteUser( 'www-adm' )
+	->setHostname( getenv( 'DEPLOY_STAGE_IP' ) )
+	->set( 'deploy_path', '/var/www/{{application}}' )
+	->set(
+		'branch',
+		function () {
+			return input()->getOption( 'branch' ) ?: 'develop';
+		}
+	)
+	->set( 'host', 'stage' );
 
 // Tasks
-task( 'npm:production', 'npm run production' );
-
 task(
-	'reload:php-fpm',
-	function () {
-		run( 'sudo /etc/init.d/php8.1-fpm reload' );
+	'npm:production',
+	function() {
+		run( 'cd {{release_path}} && npm run production' );
 	}
 );
 
@@ -90,31 +96,23 @@ desc( 'Deploy your project' );
 task(
 	'deploy',
 	[
-		'deploy:info',
 		'deploy:prepare',
-		'deploy:lock',
-		'deploy:release',
-		'deploy:update_code',
-		'deploy:shared',
-		'deploy:writable',
 		'deploy:vendors',
 		'deploy:clear_paths',
 		'deploy:symlink',
 		'deploy:unlock',
-		'cleanup',
-		'success',
+		'deploy:cleanup',
+		'deploy:success',
 	]
 );
 
 before( 'deploy', 'slack:notify' );
-after( 'success', 'slack:notify:success' );
+after( 'deploy:success', 'slack:notify:success' );
 after( 'deploy:failed', 'slack:notify:failure' );
-
-after( 'deploy', 'reload:php-fpm' );
 
 after( 'deploy:failed', 'deploy:unlock' );
 
 after( 'deploy:shared', 'npm:install' );
 after( 'deploy:shared', 'npm:production' );
 
-before( 'cleanup', 'wp:clear-transients' );
+before( 'deploy:cleanup', 'wp:clear-transients' );
