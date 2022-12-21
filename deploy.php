@@ -92,6 +92,27 @@ task(
 	}
 );
 
+task(
+	'test-phpcs',
+	function () {
+		runLocally( 'composer test >/dev/null' );
+	},
+);
+
+task(
+	'test-phpstan',
+	function () {
+		runLocally( 'composer run phpstan >/dev/null' );
+	},
+);
+
+task(
+	'test',
+	[
+		'test-phpcs',
+		'test-phpstan',
+	],
+);
 
 desc( 'Deploy your project' );
 task(
@@ -107,7 +128,8 @@ task(
 	]
 );
 
-before( 'deploy', 'slack:notify' );
+before( 'deploy', 'test' );
+before( 'deploy:prepare', 'slack:notify' );
 after( 'deploy:success', 'slack:notify:success' );
 after( 'deploy:failed', 'slack:notify:failure' );
 
