@@ -23,6 +23,7 @@ if ( file_exists( __DIR__ . '/.env' ) ) {
  */
 $clear_transients = [
 	'iis_styleguide_sprite',
+	'mix_manifest_transient',
 ];
 
 // Project name
