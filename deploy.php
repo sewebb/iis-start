@@ -27,10 +27,10 @@ $clear_transients = [
 ];
 
 // Project name
-set( 'application', 'iis-start.iis.se' );
+set( 'application', getenv( 'APPLICATION_NAME' ) );
 
 // Project repository
-set( 'repository', 'git@github.com:sewebb/iis-start.git' );
+set( 'repository', getenv( 'REPOSITORY' ) );
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set( 'git_tty', true );
