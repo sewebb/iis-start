@@ -1,0 +1,20 @@
+includes:
+    - ./vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+    paths:
+        - www/app/themes/iis-start
+
+    scanDirectories:
+        - www/app/plugins
+
+    level: 5
+
+    stubFiles:
+        - ./tests/stubs/wordpress-overrides.stub
+
+    # excludes_analyse:
+    #    - ./*/*/FileToBeExcluded.php
+
+    checkMissingIterableValueType: false
+    inferPrivatePropertyTypeFromConstructor: true
