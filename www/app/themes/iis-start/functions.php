@@ -71,8 +71,8 @@ add_filter(
 	}
 );
 
-function iis_configure_bugsnag() {
-	// phpcs:disable WordPress.NamingConventions.ValidVariableName.NotSnakeCase
+function iis_configure_bugsnag(): void {
+	// phpcs:disable WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
 	global $bugsnagWordpress;
 
 	if ( ! isset( $bugsnagWordpress ) ) {
@@ -80,8 +80,8 @@ function iis_configure_bugsnag() {
 	}
 
 	$bugsnagWordpress->setNotifyReleaseStages( [ 'stage', 'production' ] );
-	$bugsnagWordpress->setReleaseStage( env( 'WP_ENV' ) );
-	// phpcs:enable WordPress.NamingConventions.ValidVariableName.NotSnakeCase
+	$bugsnagWordpress->setReleaseStage( wp_get_environment_type() );
+	// phpcs:enable WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
 }
 
 iis_configure_bugsnag();
