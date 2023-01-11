@@ -39,6 +39,10 @@
             "url": "git@github.com:sewebb/iis-footer.git"
         },
         {
+            "type": "vcs",
+            "url": "git@github.com:sewebb/deployer.git"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -66,7 +70,8 @@
         "iis/blocks": "^6.2",
         "iis/library": "^4.0",
         "iis/iis-footer": "^2.0",
-        "advanced-custom-fields/advanced-custom-fields-pro": "*"
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
+        "iis/deployer": "dev-main"
     },
     "extra": {
         "wordpress-install-dir": "www/wp",
