@@ -13,4 +13,5 @@ set( 'slack_webhook', getenv( 'SLACK_WEBHOOK' ) );
 host( 'stage' )
 	->setHostname( getenv( 'DEPLOY_STAGE_IP' ) )
 	->setRemoteUser( 'www-adm' )
-	->setDeployPath( '/var/www/{{application}}' );
+	->setDeployPath( '/var/www/{{application}}' )
+	->set( 'host', 'stage' );
