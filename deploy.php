@@ -3,7 +3,7 @@ namespace Deployer;
 
 require 'vendor/iis/deployer/src/recipe.php';
 require __DIR__ . '/vendor/autoload.php';
-( \Dotenv\Dotenv::createImmutable( __DIR__ ) )->load();
+( \Dotenv\Dotenv::createUnsafeImmutable( __DIR__ ) )->load();
 
 set( 'application', getenv( 'APPLICATION_NAME' ) );
 set( 'repository', getenv( 'REPOSITORY' ) );
