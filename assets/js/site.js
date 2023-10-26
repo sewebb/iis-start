@@ -15,9 +15,11 @@ const buttons = document.querySelectorAll('[data-button]');
 
 if (buttons.length) {
 	import('@internetstiftelsen/styleguide/dist/atoms/button/Button')
-		.then((Button) => buttons.forEach((element) => (new Button(element)).start()))
+		.then((Button) =>
+			buttons.forEach((element) => new Button(element).start()),
+		)
 		.catch((ex) => {
-			console.warn('Could not load the Form component', ex);
+			console.warn('Could not load the Forms component', ex);
 		});
 }
 
@@ -37,5 +39,7 @@ if (process.env.BUGSNAG_JS_API_KEY) {
 		});
 	});
 } else {
-	console.warn('Logging is disabled. Set WP_ENV and BUGSNAG_JS_API_KEY in your .env file.');
+	console.warn(
+		'Logging is disabled. Set WP_ENV and BUGSNAG_JS_API_KEY in your .env file.',
+	);
 }

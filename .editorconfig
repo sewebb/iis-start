@@ -1,7 +1,3 @@
-# EditorConfig helps developers define and maintain consistent
-# coding styles between different editors and IDEs
-# http://editorconfig.org
-
 root = true
 
 [*]
@@ -17,4 +13,3 @@ trim_trailing_whitespace = false
 
 [{*.json,.*rc}]
 indent_style = space
-indent_size = 4
