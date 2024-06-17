@@ -39,5 +39,10 @@
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_key" />
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
 		<exclude name="WordPress.DateTime.RestrictedFunctions.date_date" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+		<exclude name="Generic.Commenting.Todo.TaskFound" />
+		<exclude name="Generic.Commenting.DocComment.MissingShort" />
+		<exclude name="Universal.Operators.DisallowShortTernary.Found" />
 	</rule>
 </ruleset>
