@@ -27,19 +27,3 @@ if (buttons.length) {
  * Main entry point for the javascript bundle.
  */
 console.log('🎉 IIS Start is up and running');
-
-if (process.env.BUGSNAG_JS_API_KEY) {
-	import('@bugsnag/js').then(({ default: Bugsnag }) => {
-		Bugsnag.start({
-			apiKey: process.env.BUGSNAG_JS_API_KEY,
-			notifyReleaseStages: ['production', 'stage'],
-			releaseStage: process.env.WP_ENV,
-			appVersion: VERSION, // Set by webpack
-			collectUserIp: false,
-		});
-	});
-} else {
-	console.warn(
-		'Logging is disabled. Set WP_ENV and BUGSNAG_JS_API_KEY in your .env file.',
-	);
-}

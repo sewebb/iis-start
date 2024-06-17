@@ -61,14 +61,13 @@
     ],
     "require": {
         "php": "^8.1",
-        "composer/installers": "^1.12",
         "vlucas/phpdotenv": "^5.2",
         "johnpbloch/wordpress": "^6.1.1",
         "oscarotero/env":"^2.1.0",
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
         "iis/blocks": "^7.0",
-        "iis/library": "^4.1",
+        "iis/library": "^4.3",
         "iis/iis-footer": "^2.0",
         "advanced-custom-fields/advanced-custom-fields-pro": "*",
         "iis/deployer": "dev-main"
@@ -92,9 +91,9 @@
         "wpackagist-plugin/rewrite-rules-inspector": "dev-trunk",
         "squizlabs/php_codesniffer": "3.*",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
-        "wp-coding-standards/wpcs": "dev-develop",
+        "wp-coding-standards/wpcs": "^3.0.1",
         "larapack/dd": "1.*",
-        "deployer/deployer": "^7.0.0",
+        "deployer/deployer": "^7.4.0",
         "szepeviktor/phpstan-wordpress": "^1.1",
         "phpstan/phpstan": "^1.9"
     },
