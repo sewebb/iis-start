@@ -44,12 +44,8 @@ We use Webpack for bundling with Laravel Mix on top for an simpler API and less 
 
 1. Start developing with `npm start`.
 
-`npm start` watches scripts and styles, compiles/transpiles them with Babel (js) and SCSS+Autoprefixer (css).
-A mix-manifest.json is generated with the names to each bundle that the theme reads and includes on the page.
-
-## Configuration
-
-It's recommended to configure `.browserslist` and when necessary install babel presets/transformers/plugins and add them to `.babelrc`. You can also activate automatic browser reloads by uncommenting the `browserSync` line in `webpack.mix.js`.
+`npm start` watches scripts and styles, compiles/transpiles them with Vite.
+A dev server is started on `localhost:5173` (or `VITE_PORT` in your .env file) that serves your js and css with hot reload.
 
 ## Code quality
 
