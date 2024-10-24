@@ -67,7 +67,7 @@
         "koodimonni-language/core-sv_se": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
         "iis/blocks": "^7.0",
-        "iis/library": "^4.3",
+        "iis/library": "^4.4",
         "iis/iis-footer": "^2.0",
         "advanced-custom-fields/advanced-custom-fields-pro": "*",
         "iis/deployer": "dev-main"
