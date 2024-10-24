@@ -57,7 +57,6 @@ Before pushing any code make sure that the code follows [the IIS Coding Conventi
 
 * `npm run eslint`
 * `npm run stylelint`
-* `npm run htmllint`
 
 Or all at once with `npm run lint`.
 
