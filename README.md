@@ -34,10 +34,6 @@ Do a "search & replace" (case sensitive) on the following:
 
 We've provided support for both Docker and Vagrant right out of the box. You can of course use your own environment. Make sure it meets the [WordPress requirements](https://wordpress.org/about/requirements/).
 
-### Docker
-
-Install [Docker](https://docs.docker.com/install/), copy `docker/nginx/default.template.conf` to `docker/nginx/default.conf` and run `docker-compose up -d`. Environment configuration is made in the `.env` file. If you need to change php configuration or nginx, check out the `php.ini` and `default.template.conf` in the `docker` directory.
-
 ## Development Workflow
 
 We use Webpack for bundling with Laravel Mix on top for an simpler API and less configuration.
