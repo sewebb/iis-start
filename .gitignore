@@ -1,3 +1,7 @@
+# REMOVE LOCK-FILES FROM GITIGNORE IF THIS IS USED IN A PROJECT
+composer.lock
+package.lock
+
 # This project
 www/app/uploads
 www/app/mu-plugins
