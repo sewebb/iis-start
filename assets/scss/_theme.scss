@@ -1,5 +1,7 @@
+@use '@internetstiftelsen/styleguide/src/configurations/colors/colors' as colors;
+
 :root {
-	--m-submenu-background-color: #{$color-lemon};
-	--m-submenu-icon-fill-color: #{$color-cyberspace};
-	--m-submenu-icon-background-hover-color: #{$color-lemon};
+	--m-submenu-background-color: #{colors.$color-lemon};
+	--m-submenu-icon-fill-color: #{colors.$color-cyberspace};
+	--m-submenu-icon-background-hover-color: #{colors.$color-lemon};
 }

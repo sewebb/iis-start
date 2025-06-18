@@ -1,3 +1,5 @@
+import 'a11y-toggle';
+
 /**
  * The following will auto initialize basic functionality
  * like accordions, context-menus, tab highlighting etc..

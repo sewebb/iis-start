@@ -21,14 +21,10 @@
             "email": "tobias.bleckert@iis.se"
         }
     ],
-    "repositories":[
+    "repositories": [
         {
-            "type":"composer",
-            "url":"https://wpackagist.org"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:sewebb/iis-pack.git"
+            "type": "composer",
+            "url": "https://wpackagist.org"
         },
         {
             "type": "composer",
@@ -36,11 +32,27 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:sewebb/iis-footer.git"
+            "url": "git@gitlab.com:internetstiftelsen/internal/webbgruppen/plugins/iis-pack.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:sewebb/deployer.git"
+            "url": "git@gitlab.com:internetstiftelsen/internal/webbgruppen/plugins/iis-footer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:internetstiftelsen/internal/webbgruppen/plugins/iis-mailchimp.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:internetstiftelsen/internal/webbgruppen/plugins/iis-faq.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:internetstiftelsen/internal/webbgruppen/plugins/lord-icon.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:internetstiftelsen/internal/webbgruppen/packages/deployer.git"
         },
         {
             "type": "composer",
@@ -57,6 +69,7 @@
         "iis/blocks": "^7.0",
         "iis/library": "^4.4",
         "iis/iis-footer": "^2.0",
+        "iis/iis-pack": "^3.0",
         "wpengine/advanced-custom-fields-pro": "*",
         "iis/deployer": "dev-main"
     },
